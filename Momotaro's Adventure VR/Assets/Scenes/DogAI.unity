@@ -996,8 +996,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movementSpeed: 10
-  distanceFromTarget: 3
+  maxDistanceBetween: 4
   targetTag: Enemy
+  debug: 1
 --- !u!54 &759847944
 Rigidbody:
   m_ObjectHideFlags: 0
