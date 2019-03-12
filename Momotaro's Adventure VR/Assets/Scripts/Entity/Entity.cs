@@ -7,13 +7,8 @@ namespace Entity
     public class Entity : MonoBehaviour
     {
         enum teamTypes { Noone, Friendly, Enemy };
-
-        private float healthCurrent;
-        public float HealthCurrent
-        {
-            get { return healthCurrent; }
-            set { healthCurrent = value; }
-        }
+    
+        public float HealthCurrent { get; set; }
 
         /// <summary>
         /// Sets the entity on non-active
