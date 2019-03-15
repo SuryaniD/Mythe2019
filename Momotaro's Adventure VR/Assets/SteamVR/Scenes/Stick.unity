@@ -188,7 +188,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 3.09, y: 6.55, z: 2.09}
   m_Center: {x: 0, y: 3.11, z: -0.3}
---- !u!114 &281753398
+--- !u!114 &281753395
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -197,9 +197,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 281753393}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f76e3d42f308b794d9625325c75c40cb, type: 3}
+  m_Script: {fileID: 11500000, guid: 9b9e56932eb631b40ba89a61e9aff589, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _minimumVelocity: 0.1
+  swordloc: {fileID: 1809325141}
   HP: 3
 --- !u!1 &459305384
 GameObject:
@@ -467,7 +469,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6500002, guid: 47377a9aa6b50294a865e21fe968af4d, type: 3}
       propertyPath: m_IsTrigger
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 47377a9aa6b50294a865e21fe968af4d, type: 3}
@@ -964,3 +966,16 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &1809325141
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1809325137}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 246efd5348835ca4a8aee8f35072f2ed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  locationHistory: []
