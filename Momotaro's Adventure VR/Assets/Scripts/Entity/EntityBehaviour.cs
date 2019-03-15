@@ -6,14 +6,17 @@ using UnityEngine.AI;
 
 public class EntityBehaviour : Entity
 {
-    public GameObject target;
-    private float speed;
-    private NavMeshAgent navAgent;
+    public enum AIState {  }
+
+
+    public 
+
 
     
+
     void Start()
     {
-        base.Function();
+        
         
     }
 
