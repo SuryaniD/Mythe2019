@@ -7,21 +7,6 @@ using UnityEngine.AI;
 public class EntityBehaviour : Entity
 {
     public enum AIState {  }
-
-
-    public 
-
-
     
-
-    void Start()
-    {
-        
-        
-    }
-
-
-
-
 }
 

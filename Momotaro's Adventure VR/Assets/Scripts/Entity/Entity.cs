@@ -12,13 +12,6 @@ public class Entity : MonoBehaviour
 
     public float HealthCurrent { get; set; }
 
-    public Entity()
-    {
-        HealthCurrent = 100f;
-        teamCurrent = teamTypes.Noone;
-    }
-
-
 
 
 
