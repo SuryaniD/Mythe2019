@@ -211,7 +211,7 @@ public class AISpotting : MonoBehaviour
         UnityEditor.Handles.DrawLine(_pos, _pos + _dirR * currentRange);
 
         //Right
-        //Gizmos.DrawLine(_pos, targetObject.transform.position);
+        Gizmos.DrawLine(_pos, targetObject.transform.position);
     }
 
 
