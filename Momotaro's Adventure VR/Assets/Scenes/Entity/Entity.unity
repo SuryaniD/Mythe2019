@@ -299,7 +299,7 @@ MonoBehaviour:
   targetTag: Player
   moveSpeed: 2
   navAgent: {fileID: 0}
-  debug: 0
+  debug: 1
 --- !u!136 &484229733
 CapsuleCollider:
   m_ObjectHideFlags: 0
