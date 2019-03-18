@@ -9,7 +9,9 @@ public class StickToObj : MonoBehaviour
     private void OnCollisionEnter(Collision collision)
     {
         gameObject.transform.parent = collision.transform;
+        GetComponent<Rigidbody>().velocity = Vector3.zero;
         GetComponent<Rigidbody>().useGravity = false;
+        gameObject.transform.rotation = collision.transform.rotation;
     }
 
     private void OnCollisionStay(Collision collision)
