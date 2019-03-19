@@ -4,11 +4,14 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - Sword
-  - player
+<<<<<<< HEAD
   - FxTemporaire
   - projectile
   - Enemy
+=======
+  - Sword
+  - player
+>>>>>>> feature/enemyAttack
   layers:
   - Default
   - TransparentFX
