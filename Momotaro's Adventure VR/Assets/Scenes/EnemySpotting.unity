@@ -352,13 +352,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6cd71b65b7d96b44aba16761b569be58, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  aiCurrentState: 0
-  maxRange: 10
-  currentRange: 0
-  aiFov: 130
-  timeSearching: 5
+  teamCurrent: 2
+  aiStateCurrent: 0
   targetTag: Player
+  targetObject: {fileID: 0}
+  aiFov: 130
+  targetRangeToAttack: 2
+  targetRangeCurrent: 2
+  moveSpeed: 2
+  navAgent: {fileID: 0}
   debug: 1
+  aiCurrentState: 0
+  maxRangeSpotting: 10
+  timeSearching: 5
 --- !u!1 &1505728849
 GameObject:
   m_ObjectHideFlags: 0
@@ -371,6 +377,7 @@ GameObject:
   - component: {fileID: 1505728852}
   - component: {fileID: 1505728851}
   - component: {fileID: 1505728850}
+  - component: {fileID: 1505728854}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -451,6 +458,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1505728854
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1505728849}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c810c01a53fba3646b1426759dcf3ddb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  teamCurrent: 1
 --- !u!1 &2105935207
 GameObject:
   m_ObjectHideFlags: 0

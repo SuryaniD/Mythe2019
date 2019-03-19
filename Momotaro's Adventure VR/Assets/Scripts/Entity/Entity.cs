@@ -6,17 +6,22 @@ using UnityEngine;
 
 public class Entity : MonoBehaviour
 {
-    enum teamTypes { Noone, Friendly, Enemy };
+    public enum teamTypes
+    {
+        Noone,
+        Friendly,
+        Enemy
+    }
 
-    private teamTypes teamCurrent = teamTypes.Noone;
+    public teamTypes teamCurrent = teamTypes.Enemy;
 
-    public float HealthCurrent { get; set; }
+    public float healthCurrent = 100f;//{ get; set; }
 
 
 
 
     /// <summary>
-    /// Sets the entity on non-active
+    /// Sets the entity to non-active
     /// </summary>
     public void EntityDeactivate()
     {
@@ -30,6 +35,9 @@ public class Entity : MonoBehaviour
     {
 
     }
+
+
+
 
 }
 

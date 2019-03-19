@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
@@ -16,19 +17,29 @@ public class EntityBehaviour : Entity
         Searching,
     }
 
+    
+
     public AIState aiStateCurrent = AIState.Idle;
 
-    [SerializeField]
-    private string targetTag = "Player";
-    private GameObject targetObject;
+    //- Shared variables -
 
-    [SerializeField]
-    private float moveSpeed = 2f;
+    //-Target
+    public string targetTag = "Player";
+    public GameObject targetObject = null;
+    public float aiFov = 130f;
+    //Ranges
+    public float targetRangeToAttack = 2f;// The range between the position and to target before AI can attack
+    public float targetRangeCurrent = 2f;// The current range to the target
 
+
+    //-Moving
+    public float moveSpeed = 2f;
     public NavMeshAgent navAgent;
+    
+    //-Delegates
+    //public Action<>
 
-    private float targetRangeToAttack = 2f;
-    private float targetRangeCurrent = 2f;
+    
     //--------------------------------------------------------------------------
 
 
@@ -42,7 +53,7 @@ public class EntityBehaviour : Entity
 
     void Start()
     {
-        HealthCurrent = 100f;
+        healthCurrent = 100f;
 
         if (debug)
             DebugSetUp();
@@ -71,9 +82,10 @@ public class EntityBehaviour : Entity
         targetRangeCurrent = CheckDistanceToObj(targetObject.transform.position);
     }
 
-    //--------
-    //-----State
-    //---------
+    //---------------
+    //-----State-----
+    //---------------
+
     public void SetCurrentState(AIState _value)
     {
         aiStateCurrent = _value;
@@ -108,23 +120,23 @@ public class EntityBehaviour : Entity
         switch (aiStateCurrent)
         {
             case AIState.Idle:
-                //StateIdle();
+                StateIdle();
                 break;
 
             case AIState.Alerted:
-                //StateAlerted();
+                StateAlerted();
                 break;
 
             case AIState.Searching:
-                //StateSearching();
+                StateSearching();
                 break;
 
             case AIState.Following:
-
+                StateFollowing();
                 break;
 
             case AIState.Attacking:
-
+                StateAttacking();
                 break;
         }
 
@@ -133,11 +145,52 @@ public class EntityBehaviour : Entity
 
 
     /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="_value"></param>
+    /// <returns></returns>
+    public Vector3 RotateToDirection(Vector3 _value)
+    {
+        return (Quaternion.Euler(_value) * transform.forward);
+    }
+
+    //-------------------------
+    //-----State functions-----
+    //-------------------------
+
+    #region State Functions
+    public virtual void StateIdle()
+    {
+        
+    }
+
+    public virtual void StateAlerted()
+    {
+        
+    }
+
+    public virtual void StateSearching()
+    {
+        
+    }
+
+    public virtual void StateFollowing()
+    {
+
+    }
+
+    public virtual void StateAttacking()
+    {
+
+    }
+    #endregion
+
+    /// <summary>
     /// Checks the distance to an object
     /// </summary>
     /// <param name="_position"></param>
     /// <returns></returns>
-    private float CheckDistanceToObj(Vector3 _position)
+    public float CheckDistanceToObj(Vector3 _position)
     {
         float _distance = Vector3.Distance(transform.position, _position);
 
