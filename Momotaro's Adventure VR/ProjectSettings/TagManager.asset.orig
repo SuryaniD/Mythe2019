@@ -7,9 +7,11 @@ TagManager:
 <<<<<<< HEAD
   - FxTemporaire
   - projectile
-=======
->>>>>>> feature/entityBehaviour
   - Enemy
+=======
+  - Sword
+  - player
+>>>>>>> feature/enemyAttack
   layers:
   - Default
   - TransparentFX

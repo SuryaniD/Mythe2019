@@ -4,6 +4,8 @@
 TagManager:
   serializedVersion: 2
   tags:
+  - Sword
+  - player
   - FxTemporaire
   - projectile
   - Enemy
