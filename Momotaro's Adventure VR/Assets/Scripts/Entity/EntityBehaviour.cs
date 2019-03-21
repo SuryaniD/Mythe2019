@@ -37,7 +37,8 @@ public class EntityBehaviour : Entity
     public NavMeshAgent navAgent;
 
     //-Delegates
-    public Action entityAttack;
+    //public Action entityAttack;
+    public EnemyAttack enemyAttack;
 
     
     //--------------------------------------------------------------------------
@@ -53,16 +54,19 @@ public class EntityBehaviour : Entity
 
     void Start()
     {
+        enemyAttack = GetComponent<EnemyAttack>();
+        targetObject = GameObject.FindGameObjectWithTag(targetTag);
+        
         healthCurrent = 100f;
 
         if (debug)
             DebugSetUp();
 
-        targetObject = GameObject.FindGameObjectWithTag(targetTag);
+        
 
         CheckState();
 
-        entityAttack();
+        //entityAttack();
     }
 
 
@@ -163,7 +167,8 @@ public class EntityBehaviour : Entity
     #region State Functions
     public virtual void StateIdle()
     {
-        
+        if (targetRangeCurrent < targetRangeToAttack)
+            SetCurrentState(AIState.Attacking);
     }
 
     public virtual void StateAlerted()
@@ -183,7 +188,10 @@ public class EntityBehaviour : Entity
 
     public virtual void StateAttacking()
     {
-        
+        if (targetRangeCurrent < targetRangeToAttack)
+            enemyAttack.Attack();
+        else
+            SetCurrentState(AIState.Idle);
     }
     #endregion
 
@@ -200,6 +208,14 @@ public class EntityBehaviour : Entity
     }
 
 
+    public void OnDrawGizmos()//visual for minimum attack range
+    {
+        //Gizmos.color = Color.white;
+        //Gizmos.DrawWireSphere(transform.position, minAttackRange);
 
+
+        UnityEditor.Handles.color = Color.red;
+        UnityEditor.Handles.DrawWireDisc(transform.position, Vector3.up, targetRangeToAttack);
+    }
 }
 

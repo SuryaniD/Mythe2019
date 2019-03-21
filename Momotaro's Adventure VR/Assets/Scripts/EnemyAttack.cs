@@ -17,20 +17,20 @@ public class EnemyAttack : MonoBehaviour
         anim = GetComponent<Animator>();
         targetWithinRange = false;
 
-        attackDelegate = GetComponent<EntityBehaviour>();
-        attackDelegate.entityAttack += Attack;
+        //attackDelegate = GetComponent<EntityBehaviour>();
+        //attackDelegate.entityAttack += Attack;
     }
 
-    void Update()
-    {
-     //if (Input.GetKeyDown(KeyCode.Space))
-     //   {
-     //       Attack();
-     //   }
+    //void Update()
+    //{
+    //    if (Input.GetKeyDown(KeyCode.Space))
+    //    {
+    //        Attack();
+    //    }
 
-    }
+    //}
 
-    void Attack()
+    public void Attack()
     {
         Debug.Log("attack animation");
         anim.Play("Attack1h1");
@@ -40,10 +40,7 @@ public class EnemyAttack : MonoBehaviour
     {
         Debug.Log("damage taken");
     }
-    public void OnDrawGizmosSelected()//visual for minimum attack range
-    {
-        Gizmos.color = Color.white;
-        Gizmos.DrawWireSphere(transform.position, minAttackRange);
-    }
+
+    
 
 }
