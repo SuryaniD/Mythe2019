@@ -9,18 +9,25 @@ public class EnemyAttack : MonoBehaviour
     private bool targetWithinRange;
     public float minAttackRange = 7.5f;//minimum range for attacking
 
+    [SerializeField]
+    private EntityBehaviour attackDelegate;
+
     void Start()
     {
         anim = GetComponent<Animator>();
         targetWithinRange = false;
+
+        attackDelegate = GetComponent<EntityBehaviour>();
+        attackDelegate.entityAttack += Attack;
     }
 
     void Update()
     {
-     if (Input.GetKeyDown(KeyCode.Space))
-        {
-            Attack();
-        }
+     //if (Input.GetKeyDown(KeyCode.Space))
+     //   {
+     //       Attack();
+     //   }
+
     }
 
     void Attack()

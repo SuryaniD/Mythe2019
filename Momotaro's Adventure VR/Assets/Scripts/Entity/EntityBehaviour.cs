@@ -35,9 +35,9 @@ public class EntityBehaviour : Entity
     //-Moving
     public float moveSpeed = 2f;
     public NavMeshAgent navAgent;
-    
+
     //-Delegates
-    //public Action<>
+    public Action entityAttack;
 
     
     //--------------------------------------------------------------------------
@@ -61,6 +61,8 @@ public class EntityBehaviour : Entity
         targetObject = GameObject.FindGameObjectWithTag(targetTag);
 
         CheckState();
+
+        entityAttack();
     }
 
 
@@ -181,7 +183,7 @@ public class EntityBehaviour : Entity
 
     public virtual void StateAttacking()
     {
-
+        
     }
     #endregion
 
