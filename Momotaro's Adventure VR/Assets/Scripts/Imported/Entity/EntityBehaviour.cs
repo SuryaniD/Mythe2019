@@ -185,9 +185,7 @@ public class EntityBehaviour : Entity
 
     public virtual void StateFollowing()
     {
-        if (targetRangeCurrent > targetRangeToAttack)
-            aiMoveTo.MoveTo(targetObject.transform.position, moveSpeed, targetRangeToAttack * 0.6f);
-        else
+        if (aiMoveTo.MoveTo(targetObject.transform.position, moveSpeed, targetRangeToAttack * 0.6f))
             SetCurrentState(AIState.Attacking);
     }
 
