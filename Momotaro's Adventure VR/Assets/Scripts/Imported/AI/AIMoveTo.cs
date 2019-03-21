@@ -6,12 +6,17 @@ using UnityEngine;
 /// Peerprogrammed by Eva Hoefs & Peter Schreuder. 2019.
 /// </summary>
 
-public class AIMoveTo : EntityBehaviour
+public class AIMoveTo : MonoBehaviour
 {
     [SerializeField]
-    private float maxDistanceBetween = 4f;
+    private float moveSpeed = 2f, maxDistanceBetween = 4f;
 
+
+    private string targetTag = "Player";
     Transform target = null;
+    private bool debug = true;
+
+    public Vector3 lockScale = new Vector3(1, 1, 1);
 
 
     void Update()
@@ -55,11 +60,14 @@ public class AIMoveTo : EntityBehaviour
     /// <param name="_speed"></param>
     public bool MoveTo(Vector3 _target, float _speed, float _maxDistanceBetween)
     {
+        Vector3 _pos = transform.position;
+        Vector3 _newPos = new Vector3(_pos.x * lockScale.x, _pos.y * lockScale.y, _pos.z * lockScale.z);
+
         bool _return = false;
-        float _distance = Vector3.Distance(transform.position, _target);
+        float _distance = Vector3.Distance(_newPos, _target);
 
         if (_distance > _maxDistanceBetween)
-            transform.position = Vector3.MoveTowards(transform.position, _target, _speed * Time.deltaTime);
+            transform.position = Vector3.MoveTowards(_newPos, _target, _speed * Time.deltaTime);
         else
             _return = true;
 

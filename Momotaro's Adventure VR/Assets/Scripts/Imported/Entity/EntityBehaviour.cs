@@ -54,6 +54,7 @@ public class EntityBehaviour : Entity
     void Start()
     {
         enemyAttack = GetComponent<EnemyAttack>();
+        aiMoveTo = GetComponent<AIMoveTo>();
         targetObject = GameObject.FindGameObjectWithTag(targetTag);
         
         healthCurrent = 100f;

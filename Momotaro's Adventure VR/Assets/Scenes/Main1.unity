@@ -467,20 +467,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 630de971257abb341bdcb49323948882, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  teamCurrent: 2
-  healthCurrent: 100
-  aiStateCurrent: 0
-  targetTag: Enemy
-  targetObject: {fileID: 0}
-  aiFov: 130
-  targetRangeToAttack: 2
-  targetRangeCurrent: 2
   moveSpeed: 2
-  navAgent: {fileID: 0}
-  enemyAttack: {fileID: 0}
-  aiMoveTo: {fileID: 0}
-  debug: 0
   maxDistanceBetween: 4
+  lockScale: {x: 1, y: 0, z: 1}
 --- !u!114 &671632316
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -502,7 +491,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 671632312}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0d61d59062bab14459275ebcf013433c, type: 3}
   m_Name: 
@@ -513,7 +502,7 @@ MonoBehaviour:
   targetTag: Player
   targetObject: {fileID: 0}
   aiFov: 130
-  targetRangeToAttack: 7.5
+  targetRangeToAttack: 1
   targetRangeCurrent: 2
   moveSpeed: 2
   navAgent: {fileID: 0}
