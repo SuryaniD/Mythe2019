@@ -10,13 +10,12 @@ public class AITurnTo : MonoBehaviour
 
     private void Update()
     {
-        Vector3 direction = target.position - transform.position;
+        TurnToTransform(target);
+    }
 
-        //float _y = direction.y;
-
-        //direction.y = direction.z;
-
-        //direction.z = -_y;
+    public void TurnToTransform(Transform _transform)
+    {
+        Vector3 direction = _transform.position - transform.position;
 
         Quaternion rotation = Quaternion.LookRotation(direction);
         rotation.x = rotation.x * rotationSpeedScale.x;
