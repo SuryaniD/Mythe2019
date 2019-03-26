@@ -1,8 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
-
+using System;
 
 public class Entity : MonoBehaviour
 {
@@ -12,12 +11,21 @@ public class Entity : MonoBehaviour
         Friendly,
         Enemy
     }
+    public Action<float> DamageTaken;
 
     public teamTypes teamCurrent = teamTypes.Enemy;
 
     public float healthCurrent = 100f;//{ get; set; }
 
+    public void TakeDamage(float _value)
+    {
+        healthCurrent -= _value;
 
+        if (DamageTaken != null)
+        {
+            DamageTaken(healthCurrent);
+        }
+    }
 
 
     /// <summary>
