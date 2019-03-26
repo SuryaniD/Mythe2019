@@ -32,13 +32,13 @@ public class EnemyAttack : MonoBehaviour
 
     public void Attack()
     {
-        Debug.Log("attack animation");
+        //Debug.Log("attack animation");
         anim.Play("Attack1h1");
         DealDamage();
     }
     void DealDamage()
     {
-        Debug.Log("damage taken");
+        //Debug.Log("damage taken");
     }
 
     

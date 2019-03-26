@@ -3,14 +3,16 @@ using System.Collections.Generic;
 using UnityEngine;
 using System;
 
-public class Entity : MonoBehaviour
-{
-    public enum teamTypes
+public enum teamTypes
     {
         Noone,
         Friendly,
         Enemy
     }
+
+public class Entity : MonoBehaviour
+{
+    
     public Action<float> DamageTaken;
 
     public teamTypes teamCurrent = teamTypes.Enemy;

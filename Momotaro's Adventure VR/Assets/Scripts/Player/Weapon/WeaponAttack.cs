@@ -37,6 +37,13 @@ public class WeaponAttack : MonoBehaviour
         anim.Play("KatanaAttackAnimation");
 
 
+
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.GetComponent<EntityBehaviour>() != null && other.GetComponent<EntityBehaviour>().teamCurrent == teamTypes.Enemy)
+            other.GetComponent<EntityBehaviour>().TakeDamage(10f);
     }
 
     IEnumerator Alarm_canAttack(float _value)
