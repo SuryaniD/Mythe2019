@@ -2,6 +2,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+//---------------
+//- This script gives the ability to attack
+//- By: Peter Schreuder
+//---------------
+
 public class WeaponAttack : MonoBehaviour
 {
     private Animator anim;

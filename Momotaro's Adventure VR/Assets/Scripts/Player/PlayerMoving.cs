@@ -2,6 +2,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+//---------------
+//- This script moves the player
+//- By: Peter Schreuder
+//---------------
+
 public class PlayerMoving : MonoBehaviour
 {
 
@@ -16,6 +21,8 @@ public class PlayerMoving : MonoBehaviour
 
     void Start()
     {
+        CheckCharacterController();
+
         //Find the current camera
         cameraTransform = GameObject.Find("Main Camera").transform;
     }
@@ -24,14 +31,16 @@ public class PlayerMoving : MonoBehaviour
     {
         CharacterController controller = GetComponent<CharacterController>();
 
+        //Check if the player is on the ground
         if (controller.isGrounded)
         {
             MoveDirection();
         }
 
+        //Move the player down to simulate gravity
         FakeGravity();
 
-
+        //Move
         controller.Move(moveDirection * Time.deltaTime);
     }
 
@@ -46,5 +55,15 @@ public class PlayerMoving : MonoBehaviour
     {
         //Fake gravity
         moveDirection.y -= gravity * Time.deltaTime;
+    }
+
+    void CheckCharacterController()
+    {
+        //If there is no Controller detected, create one for now
+        if (GetComponent<CharacterController>() == null)
+        {
+            gameObject.AddComponent<CharacterController>();
+            Debug.LogWarning("No CharacterController detected! Added one for now.");
+        }
     }
 }

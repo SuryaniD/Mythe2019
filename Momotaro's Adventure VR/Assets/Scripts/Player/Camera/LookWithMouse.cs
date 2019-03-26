@@ -2,6 +2,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+//---------------
+//- This script lets the camera rotate with the mouse position
+//- By: Peter Schreuder
+//---------------
+
 public class LookWithMouse : MonoBehaviour
 {
     [Header("Invert Mouse Axis")]
