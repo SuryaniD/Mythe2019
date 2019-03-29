@@ -31,10 +31,10 @@ AnimatorController:
   - serializedVersion: 5
     m_Name: Torso
     m_StateMachine: {fileID: 1107029109259165276}
-    m_Mask: {fileID: 0}
+    m_Mask: {fileID: 31900000, guid: 5ee0f261a40de384f9fd08070b78b954, type: 2}
     m_Motions: []
     m_Behaviours: []
-    m_BlendingMode: 1
+    m_BlendingMode: 0
     m_SyncedLayerIndex: -1
     m_DefaultWeight: 0
     m_IKPass: 0
@@ -159,7 +159,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 0}
+  m_Motion: {fileID: 7400000, guid: 996d46dd1493a6a4bb30395f01a43e50, type: 3}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
