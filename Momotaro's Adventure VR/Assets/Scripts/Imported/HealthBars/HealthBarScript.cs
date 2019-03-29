@@ -1,39 +1,40 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class HealthBarScript : MonoBehaviour
-{
-    [SerializeField]
-    private float startingHealth = 100f;
+{ 
 
     [SerializeField]
     private Image enemyHealthBar;
+
     [SerializeField]
     private Image playerHealthBar;
 
-    
-
+    private float startingValue = 100f;
+    public Entity entity;
     private float updatedPlayerHealth;
     private float updatedEnemyHealth;
 
     private void Start()
     {
-        PlayerHealthChange(startingHealth);
-        EnemyHealthChange(updatedEnemyHealth);
+        entity = GetComponent<Entity>();
+        PlayerHealthChange(startingValue);
+        EnemyHealthChange(startingValue);
     }
 
-    private void PlayerHealthChange(float value)
+    public void PlayerHealthChange(float _value)
     {
-        float amountPlayerHealth = (value / 100.0f) * 180.0f / 360.0f;
+        float amountPlayerHealth = (_value / 100.0f) * 180.0f / 360.0f;
         playerHealthBar.fillAmount = Mathf.Clamp(amountPlayerHealth, 0f, 100f);
-
+        Debug.Log("player damaged");
     }
 
-    private void EnemyHealthChange(float value)
+    public void EnemyHealthChange(float _value)
     {
-        float amountEnemyHealth = (value);
-        enemyHealthBar.fillAmount = Mathf.Clamp(amountEnemyHealth, 0f, 100f);
+        float amountEnemyHealth = _value;
+        enemyHealthBar.fillAmount = amountEnemyHealth/100;
     }
 }

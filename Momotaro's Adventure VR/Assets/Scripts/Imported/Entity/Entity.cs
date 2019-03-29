@@ -10,22 +10,47 @@ public enum teamTypes
         Enemy
     }
 
+public enum entityStates
+{
+    Alive,
+    Dead
+}
+
 public class Entity : MonoBehaviour
 {
-    
-    public Action<float> DamageTaken;
 
+    public HealthBarScript hbScript;
     public teamTypes teamCurrent = teamTypes.Enemy;
+    public entityStates entityStateCurrent = entityStates.Alive;
+    [SerializeField]
+    private float healthCurrent;
+    private float startinghealth = 100.0f;
+    private float attackDamage = 10.0f;
 
-    public float healthCurrent = 100f;//{ get; set; }
-
-    public void TakeDamage(float _value)
+    private void FixedUpdate()
     {
-        healthCurrent -= _value;
-
-        if (DamageTaken != null)
+        if(healthCurrent <= 0)
         {
-            DamageTaken(healthCurrent);
+            entityStateCurrent = entityStates.Dead;
+        }
+    }
+    private void Start()
+    {
+        healthCurrent = startinghealth;
+    }
+
+    public void TakeDamage(teamTypes type)
+    {
+        if (type == teamTypes.Enemy)
+        {
+            healthCurrent -= attackDamage;
+            hbScript.EnemyHealthChange(healthCurrent);
+        }
+
+        if (type == teamTypes.Friendly)
+        {
+            healthCurrent -= attackDamage;
+            hbScript.PlayerHealthChange(healthCurrent);
         }
     }
 
@@ -45,10 +70,6 @@ public class Entity : MonoBehaviour
     {
 
     }
-
-
-
-
 }
 
 
