@@ -8,7 +8,13 @@ public class OniAnimationManager : MonoBehaviour
 
     //Movement variables
     [SerializeField]
+    [Range(-1, 1)]
     private float horizontal, vertical;
+
+    [Header("Debug")]
+    [SerializeField]
+    private bool tryAttack;
+
 
     // Start is called before the first frame update
     void Start()
@@ -19,7 +25,14 @@ public class OniAnimationManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        ChangeHorizontal(horizontal);
+        ChangeVertical(vertical);
+
+        if (tryAttack)
+        {
+            tryAttack = false;
+            AttackAnimation();
+        }
     }
 
     /// <summary>
