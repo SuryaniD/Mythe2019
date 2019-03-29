@@ -61,13 +61,13 @@ public class AIMoveTo : MonoBehaviour
     public bool MoveTo(Vector3 _target, float _speed, float _maxDistanceBetween)
     {
         Vector3 _pos = transform.position;
-        Vector3 _newPos = new Vector3(_pos.x * lockScale.x, _pos.y * lockScale.y, _pos.z * lockScale.z);
+        Vector3 _newPos = new Vector3(_target.x * lockScale.x, _target.y * lockScale.y, _target.z * lockScale.z);
 
         bool _return = false;
-        float _distance = Vector3.Distance(_newPos, _target);
+        float _distance = Vector3.Distance(_pos, _newPos);
 
         if (_distance > _maxDistanceBetween)
-            transform.position = Vector3.MoveTowards(_newPos, _target, _speed * Time.deltaTime);
+            transform.position = Vector3.MoveTowards(_pos, _newPos, _speed * Time.deltaTime);
         else
             _return = true;
 
