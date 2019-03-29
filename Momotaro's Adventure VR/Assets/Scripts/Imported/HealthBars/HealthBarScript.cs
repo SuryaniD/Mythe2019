@@ -29,7 +29,6 @@ public class HealthBarScript : MonoBehaviour
     {
         float amountPlayerHealth = (_value / 100.0f) * 180.0f / 360.0f;
         playerHealthBar.fillAmount = Mathf.Clamp(amountPlayerHealth, 0f, 100f);
-        Debug.Log("player damaged");
     }
 
     public void EnemyHealthChange(float _value)
