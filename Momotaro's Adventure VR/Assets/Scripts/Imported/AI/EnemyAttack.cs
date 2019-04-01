@@ -9,6 +9,8 @@ public class EnemyAttack : MonoBehaviour
     private bool targetWithinRange;
     public float minAttackRange = 7.5f;//minimum range for attacking
 
+    public string aniAttack = "Attack";
+
     [SerializeField]
     private EntityBehaviour attackDelegate;
 
@@ -32,13 +34,13 @@ public class EnemyAttack : MonoBehaviour
 
     public void Attack()
     {
-        Debug.Log("attack animation");
-        anim.Play("Attack1h1");
+        anim.Play(aniAttack);
         DealDamage();
     }
+
     void DealDamage()
     {
-        Debug.Log("damage taken");
+        
     }
 
     
