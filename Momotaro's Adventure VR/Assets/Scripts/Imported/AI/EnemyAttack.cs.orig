@@ -9,9 +9,16 @@ public class EnemyAttack : MonoBehaviour
     private Animator anim;
     private float enemyDamage;
     private bool targetWithinRange;
+<<<<<<< HEAD
     public float minAttackRange = 7.5f;
+=======
+    public float minAttackRange = 7.5f;//minimum range for attacking
 
     public string aniAttack = "Attack";
+
+    [SerializeField]
+    private EntityBehaviour attackDelegate;
+>>>>>>> develop
 
     void Start()
     {
@@ -21,12 +28,21 @@ public class EnemyAttack : MonoBehaviour
 
     public void Attack()
     {
+<<<<<<< HEAD
+        anim.Play("Attack1h1");
+=======
+        anim.Play(aniAttack);
+>>>>>>> develop
         DealDamage();
     }
 
     void DealDamage()
     {
+<<<<<<< HEAD
         entity.TakeDamage(teamTypes.Friendly);
+=======
+        
+>>>>>>> develop
     }
 
     

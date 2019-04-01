@@ -32,11 +32,14 @@ public class WeaponAttack : MonoBehaviour
     {
         canAttack = false;
         StartCoroutine(Alarm_canAttack(attackTime));
-
-        print("Attack");
         anim.Play("KatanaAttackAnimation");
 
+    }
 
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.GetComponent<EntityBehaviour>() != null && other.GetComponent<EntityBehaviour>().teamCurrent == teamTypes.Enemy)
+            other.GetComponent<EntityBehaviour>().TakeDamage(teamTypes.Enemy);
     }
 
     IEnumerator Alarm_canAttack(float _value)

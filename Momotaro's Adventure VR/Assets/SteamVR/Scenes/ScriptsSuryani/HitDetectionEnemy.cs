@@ -21,7 +21,7 @@ public class HitDetectionEnemy : MonoBehaviour
 
 	void OnTriggerEnter (Collider other)
 	{
-		Debug.Log("Bots met"+other.gameObject.tag);
+		//Debug.Log("Bots met"+other.gameObject.tag);
 		if(other.gameObject.tag == "Sword")
 		{
 			HP -= 1;
