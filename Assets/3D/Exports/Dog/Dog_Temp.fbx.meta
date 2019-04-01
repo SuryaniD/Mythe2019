@@ -1,17 +1,14 @@
 fileFormatVersion: 2
-guid: 2fbeeeda006fbce4cbe82c8f9a564d4c
+guid: 6c9a30bfb8a94fc49ae64a7c3cb5eeb6
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
-    100000: Knots
-    100002: //RootNode
-    400000: Knots
-    400002: //RootNode
-    2100000: KnotsMat
-    2300000: Knots
-    3300000: Knots
-    4300000: Knots
-    2186277476908879412: ImportLogs
+    100000: //RootNode
+    400000: //RootNode
+    2100000: lambert1
+    2300000: //RootNode
+    3300000: //RootNode
+    4300000: group3_doggo4_pCylinder12
   externalObjects: {}
   materials:
     importMaterials: 1

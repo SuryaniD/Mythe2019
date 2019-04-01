@@ -5,20 +5,17 @@ using UnityEngine;
 using UnityEngine.AI;
 using UnityEngine.UI;
 
-
 public class EntityBehaviour : Entity
 {
     public enum AIState
     {
-        Idle,
+        Idle = 0,
         Alerted,
         Following,
         Attacking,
         Searching,
     }
-
     
-
     public AIState aiStateCurrent = AIState.Idle;
 
     //- Shared variables -
@@ -27,9 +24,9 @@ public class EntityBehaviour : Entity
     public string targetTag = "Player";
     public GameObject targetObject = null;
     public float aiFov = 130f;
-    //Ranges
-    public float targetRangeToAttack = 2f;// The range between the position and to target before AI can attack
-    public float targetRangeCurrent = 2f;// The current range to the target
+    //Ranges+
+    public float targetRangeToAttack = 3f;// The range between the position and to target before AI can attack
+    public float targetRangeCurrent;// The current range to the target
 
 
     //-Moving
@@ -53,16 +50,11 @@ public class EntityBehaviour : Entity
 
     void Start()
     {
-        enemyAttack = GetComponent<EnemyAttack>();
         aiMoveTo = GetComponent<AIMoveTo>();
         targetObject = GameObject.FindGameObjectWithTag(targetTag);
         
-        healthCurrent = 100f;
-
         if (debug)
             DebugSetUp();
-
-        
 
         CheckState();
 
@@ -215,7 +207,6 @@ public class EntityBehaviour : Entity
     {
         //Gizmos.color = Color.white;
         //Gizmos.DrawWireSphere(transform.position, minAttackRange);
-
 
         UnityEditor.Handles.color = Color.red;
         UnityEditor.Handles.DrawWireDisc(transform.position, Vector3.up, targetRangeToAttack);
