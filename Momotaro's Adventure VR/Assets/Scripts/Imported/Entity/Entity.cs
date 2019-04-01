@@ -4,11 +4,11 @@ using UnityEngine;
 using System;
 
 public enum teamTypes
-    {
+{
         Noone,
         Friendly,
         Enemy
-    }
+}
 
 public enum entityStates
 {
@@ -71,7 +71,3 @@ public class Entity : MonoBehaviour
 
     }
 }
-
-
-
-
