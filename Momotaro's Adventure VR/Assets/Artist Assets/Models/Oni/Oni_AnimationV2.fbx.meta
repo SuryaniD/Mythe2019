@@ -1,172 +1,170 @@
 fileFormatVersion: 2
-guid: f1eb77f9a7962464f89d460ee1ec4dde
+guid: 996d46dd1493a6a4bb30395f01a43e50
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
-    100000: Base_Model
-    100002: Eyes
-    100004: Head_Point
-    100006: ikHandle1
-    100008: ikHandle2
-    100010: ikHandle3
-    100012: ikHandle4
-    100014: Knots_low:Knots
-    100016: L_Elbow
-    100018: L_Heel
-    100020: L_Hip
-    100022: L_Index_1
-    100024: L_Index_2
-    100026: L_Index_3
-    100028: L_Knee
-    100030: L_Knuckle_1
-    100032: L_Knuckle_3
-    100034: L_Knucle_2
-    100036: L_Knucle_4
-    100038: L_Middle_1
-    100040: L_Middle_2
-    100042: L_Middle_3
-    100044: L_Pinky_1
-    100046: L_Pinky_2
-    100048: L_Pinky_3
-    100050: L_Shoulder
-    100052: L_Thumb_1
-    100054: L_Thumb_Point
-    100056: L_Toe_1
-    100058: L_Toe_2
-    100060: L_Toe_3
-    100062: L_Toe_point_1
-    100064: L_Toe_point_2
-    100066: L_Toe_point_3
-    100068: L_Wrist
-    100070: Neck_point
-    100072: Neck_point1
-    100074: //RootNode
-    100076: pCube1
-    100078: pCube2
-    100080: Pelvis
-    100082: R_Elbow
-    100084: R_Heel
-    100086: R_Hip
-    100088: R_Index_1
-    100090: R_Index_2
-    100092: R_Index_3
-    100094: R_Knee
-    100096: R_Knuckle_1
-    100098: R_Knuckle_3
-    100100: R_Knucle_2
-    100102: R_Knucle_4
-    100104: R_Middle_1
-    100106: R_Middle_2
-    100108: R_Middle_3
-    100110: R_Pinky_1
-    100112: R_Pinky_2
-    100114: R_Pinky_3
-    100116: R_Shoulder
-    100118: R_Thumb_1
-    100120: R_Thumb_Point
-    100122: R_Toe_1
-    100124: R_Toe_2
-    100126: R_Toe_3
-    100128: R_Toe_point_1
-    100130: R_Toe_point_2
-    100132: R_Toe_point_3
-    100134: R_Wrist
-    100136: Skeleton
-    100138: Skirt
-    100140: Spine_1
-    100142: Spine_2
-    400000: Base_Model
-    400002: Eyes
-    400004: Head_Point
-    400006: ikHandle1
-    400008: ikHandle2
-    400010: ikHandle3
-    400012: ikHandle4
-    400014: Knots_low:Knots
-    400016: L_Elbow
-    400018: L_Heel
-    400020: L_Hip
-    400022: L_Index_1
-    400024: L_Index_2
-    400026: L_Index_3
-    400028: L_Knee
-    400030: L_Knuckle_1
-    400032: L_Knuckle_3
-    400034: L_Knucle_2
-    400036: L_Knucle_4
-    400038: L_Middle_1
-    400040: L_Middle_2
-    400042: L_Middle_3
-    400044: L_Pinky_1
-    400046: L_Pinky_2
-    400048: L_Pinky_3
-    400050: L_Shoulder
-    400052: L_Thumb_1
-    400054: L_Thumb_Point
-    400056: L_Toe_1
-    400058: L_Toe_2
-    400060: L_Toe_3
-    400062: L_Toe_point_1
-    400064: L_Toe_point_2
-    400066: L_Toe_point_3
-    400068: L_Wrist
-    400070: Neck_point
-    400072: Neck_point1
-    400074: //RootNode
-    400076: pCube1
-    400078: pCube2
-    400080: Pelvis
-    400082: R_Elbow
-    400084: R_Heel
-    400086: R_Hip
-    400088: R_Index_1
-    400090: R_Index_2
-    400092: R_Index_3
-    400094: R_Knee
-    400096: R_Knuckle_1
-    400098: R_Knuckle_3
-    400100: R_Knucle_2
-    400102: R_Knucle_4
-    400104: R_Middle_1
-    400106: R_Middle_2
-    400108: R_Middle_3
-    400110: R_Pinky_1
-    400112: R_Pinky_2
-    400114: R_Pinky_3
-    400116: R_Shoulder
-    400118: R_Thumb_1
-    400120: R_Thumb_Point
-    400122: R_Toe_1
-    400124: R_Toe_2
-    400126: R_Toe_3
-    400128: R_Toe_point_1
-    400130: R_Toe_point_2
-    400132: R_Toe_point_3
-    400134: R_Wrist
-    400136: Skeleton
-    400138: Skirt
-    400140: Spine_1
-    400142: Spine_2
+    100000: Eyes
+    100002: Head_Point
+    100004: ikHandle1
+    100006: ikHandle2
+    100008: Knots_low:Knots
+    100010: L_Elbow
+    100012: L_Heel
+    100014: L_Hip
+    100016: L_Index_1
+    100018: L_Index_2
+    100020: L_Index_3
+    100022: L_Knee
+    100024: L_Knuckle_1
+    100026: L_Knuckle_3
+    100028: L_Knucle_2
+    100030: L_Knucle_4
+    100032: L_Middle_1
+    100034: L_Middle_2
+    100036: L_Middle_3
+    100038: L_Pinky_1
+    100040: L_Pinky_2
+    100042: L_Pinky_3
+    100044: L_Shoulder
+    100046: L_Thumb_1
+    100048: L_Thumb_Point
+    100050: L_Toe_1
+    100052: L_Toe_2
+    100054: L_Toe_3
+    100056: L_Toe_point_1
+    100058: L_Toe_point_2
+    100060: L_Toe_point_3
+    100062: L_Wrist
+    100064: Neck_point
+    100066: Neck_point1
+    100068: //RootNode
+    100070: pCube1
+    100072: pCube2
+    100074: Pelvis
+    100076: R_Elbow
+    100078: R_Heel
+    100080: R_Hip
+    100082: R_Index_1
+    100084: R_Index_2
+    100086: R_Index_3
+    100088: R_Knee
+    100090: R_Knuckle_1
+    100092: R_Knuckle_3
+    100094: R_Knucle_2
+    100096: R_Knucle_4
+    100098: R_Middle_1
+    100100: R_Middle_2
+    100102: R_Middle_3
+    100104: R_Pinky_1
+    100106: R_Pinky_2
+    100108: R_Pinky_3
+    100110: R_Shoulder
+    100112: R_Thumb_1
+    100114: R_Thumb_Point
+    100116: R_Toe_1
+    100118: R_Toe_2
+    100120: R_Toe_3
+    100122: R_Toe_point_1
+    100124: R_Toe_point_2
+    100126: R_Toe_point_3
+    100128: R_Wrist
+    100130: Skeleton
+    100132: Skirt
+    100134: Spine_1
+    100136: Spine_2
+    400000: Eyes
+    400002: Head_Point
+    400004: ikHandle1
+    400006: ikHandle2
+    400008: Knots_low:Knots
+    400010: L_Elbow
+    400012: L_Heel
+    400014: L_Hip
+    400016: L_Index_1
+    400018: L_Index_2
+    400020: L_Index_3
+    400022: L_Knee
+    400024: L_Knuckle_1
+    400026: L_Knuckle_3
+    400028: L_Knucle_2
+    400030: L_Knucle_4
+    400032: L_Middle_1
+    400034: L_Middle_2
+    400036: L_Middle_3
+    400038: L_Pinky_1
+    400040: L_Pinky_2
+    400042: L_Pinky_3
+    400044: L_Shoulder
+    400046: L_Thumb_1
+    400048: L_Thumb_Point
+    400050: L_Toe_1
+    400052: L_Toe_2
+    400054: L_Toe_3
+    400056: L_Toe_point_1
+    400058: L_Toe_point_2
+    400060: L_Toe_point_3
+    400062: L_Wrist
+    400064: Neck_point
+    400066: Neck_point1
+    400068: //RootNode
+    400070: pCube1
+    400072: pCube2
+    400074: Pelvis
+    400076: R_Elbow
+    400078: R_Heel
+    400080: R_Hip
+    400082: R_Index_1
+    400084: R_Index_2
+    400086: R_Index_3
+    400088: R_Knee
+    400090: R_Knuckle_1
+    400092: R_Knuckle_3
+    400094: R_Knucle_2
+    400096: R_Knucle_4
+    400098: R_Middle_1
+    400100: R_Middle_2
+    400102: R_Middle_3
+    400104: R_Pinky_1
+    400106: R_Pinky_2
+    400108: R_Pinky_3
+    400110: R_Shoulder
+    400112: R_Thumb_1
+    400114: R_Thumb_Point
+    400116: R_Toe_1
+    400118: R_Toe_2
+    400120: R_Toe_3
+    400122: R_Toe_point_1
+    400124: R_Toe_point_2
+    400126: R_Toe_point_3
+    400128: R_Wrist
+    400130: Skeleton
+    400132: Skirt
+    400134: Spine_1
+    400136: Spine_2
     2100000: lambert3
-    2100002: lambert5
-    2100004: lambert4
-    2100006: Oni_rig_0012_lambert3
+    2100002: Oni_rig_0012_lambert3
+    2100004: lambert5
+    2100006: lambert4
     2300000: Knots_low:Knots
+    2300002: pCube1
+    2300004: pCube2
+    2300006: Skirt
     3300000: Knots_low:Knots
+    3300002: pCube1
+    3300004: pCube2
+    3300006: Skirt
     4300000: Base_Model
-    4300002: Knots_low:Knots
-    4300004: Skirt
-    4300006: pCube1
-    4300008: pCube2
+    4300002: pCube1
+    4300004: pCube2
+    4300006: Knots_low:Knots
+    4300008: Skirt
     7400000: Idle
     7400002: Walk
     7400004: Attack
     7400006: Hit
+    7400008: Death
     9500000: //RootNode
-    13700000: Base_Model
-    13700002: pCube1
-    13700004: pCube2
-    13700006: Skirt
+    13700000: //RootNode
     2186277476908879412: ImportLogs
   externalObjects: {}
   materials:
@@ -186,9 +184,9 @@ ModelImporter:
     animationImportWarnings: 
     animationRetargetingWarnings: 
     animationDoRetargetingWarnings: 0
-    importAnimatedCustomProperties: 0
+    importAnimatedCustomProperties: 1
     importConstraints: 1
-    animationCompression: 3
+    animationCompression: 0
     animationRotationError: 0.5
     animationPositionError: 0.5
     animationScaleError: 0.5
@@ -200,7 +198,7 @@ ModelImporter:
       name: Idle
       takeName: Take 001
       firstFrame: 1
-      lastFrame: 22
+      lastFrame: 20
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
@@ -227,8 +225,8 @@ ModelImporter:
     - serializedVersion: 16
       name: Walk
       takeName: Take 001
-      firstFrame: 23
-      lastFrame: 72
+      firstFrame: 20
+      lastFrame: 50
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
@@ -283,8 +281,36 @@ ModelImporter:
     - serializedVersion: 16
       name: Hit
       takeName: Take 001
+      firstFrame: 148
+      lastFrame: 157
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Death
+      takeName: Take 001
       firstFrame: 124
-      lastFrame: 152
+      lastFrame: 147
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
@@ -348,19 +374,14 @@ ModelImporter:
     serializedVersion: 2
     human: []
     skeleton:
-    - name: Oni_Animation(Clone)
+    - name: oni new(Clone)
       parentName: 
-      position: {x: 0, y: 0, z: 0}
-      rotation: {x: 0, y: 0, z: 0, w: 1}
-      scale: {x: 1, y: 1, z: 1}
-    - name: Base_Model
-      parentName: Oni_Animation(Clone)
       position: {x: -0, y: 0.066855736, z: 0.0031465723}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1.4997917, y: 1.4997917, z: 1.4997917}
     - name: Skeleton
-      parentName: Oni_Animation(Clone)
-      position: {x: -0, y: 0, z: 0}
+      parentName: oni new(Clone)
+      position: {x: -0, y: -0.0011955787, z: -0.0062957667}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 0.0861256, y: 0.0861256, z: 0.0861256}
     - name: Pelvis
@@ -370,114 +391,9 @@ ModelImporter:
       scale: {x: 1, y: 1, z: 1}
     - name: Skirt
       parentName: Pelvis
-      position: {x: -0, y: 7.18036, z: 5.687507}
+      position: {x: -0, y: -0.04467823, z: 0.01023632}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 17.414007, y: 17.414007, z: 17.414007}
-    - name: Eyes
-      parentName: Pelvis
-      position: {x: 6.4453715e-18, y: 0.8765365, z: -0.6028006}
-      rotation: {x: 0, y: -0, z: -0, w: 1}
-      scale: {x: 1.0431592, y: 1.0431592, z: 1.0431592}
-    - name: pCube1
-      parentName: Eyes
-      position: {x: 0.8665211, y: -25.147196, z: 5.855042}
-      rotation: {x: 1.2246469e-16, y: 4.6430958e-17, z: 3.2310891e-15, w: 1}
-      scale: {x: 25.271467, y: 25.271467, z: 25.271467}
-    - name: pCube2
-      parentName: Eyes
-      position: {x: 1.044579, y: -25.147196, z: 5.855042}
-      rotation: {x: -6.2831684e-15, y: -1.0354131e-16, z: -4.3628295e-16, w: 1}
-      scale: {x: 25.271467, y: 25.271467, z: 25.271467}
-    - name: L_Hip
-      parentName: Pelvis
-      position: {x: -0.26111698, y: -0.09159761, z: 0.070105225}
-      rotation: {x: 0, y: 0, z: -0.7179309, w: 0.69611436}
-      scale: {x: 1, y: 1, z: 1}
-    - name: L_Knee
-      parentName: L_Hip
-      position: {x: 0.26113367, y: 0.0015105647, z: 0.0019989999}
-      rotation: {x: 0, y: -0, z: -0.005394062, w: 0.99998546}
-      scale: {x: 1, y: 1, z: 1}
-    - name: L_Heel
-      parentName: L_Knee
-      position: {x: 0.21663792, y: -0.001456507, z: -0.084942}
-      rotation: {x: 0.6922318, y: 0.72167534, z: -1.8028995e-18, w: -8.657684e-17}
-      scale: {x: 1, y: 1, z: 1}
-    - name: L_Toe_1
-      parentName: L_Heel
-      position: {x: 0.0076369997, y: -0.0122748, z: -0.174648}
-      rotation: {x: 0, y: -0, z: -0, w: 1}
-      scale: {x: 1, y: 1, z: 1}
-    - name: L_Toe_point_1
-      parentName: L_Toe_1
-      position: {x: 0.006506, y: 0.0105675, z: -0.1353631}
-      rotation: {x: 0, y: -0, z: -0, w: 1}
-      scale: {x: 1, y: 1, z: 1}
-    - name: L_Toe_2
-      parentName: L_Heel
-      position: {x: 0.084962994, y: -0.0107012, z: -0.13373399}
-      rotation: {x: 0.026413828, y: 0.7066133, z: 0.026413828, w: 0.7066133}
-      scale: {x: 1, y: 1, z: 1}
-    - name: L_Toe_point_2
-      parentName: L_Toe_2
-      position: {x: 0.15390858, y: 0.0072821015, z: 0.029763}
-      rotation: {x: -0.026413828, y: -0.7066133, z: -0.026413828, w: 0.7066133}
-      scale: {x: 1, y: 1, z: 1}
-    - name: L_Toe_3
-      parentName: L_Heel
-      position: {x: -0.066446, y: -0.0107012, z: -0.13373399}
-      rotation: {x: 0.029060986, y: 0.70650935, z: 0.029060986, w: 0.70650935}
-      scale: {x: 1, y: 1, z: 1}
-    - name: L_Toe_point_3
-      parentName: L_Toe_3
-      position: {x: 0.16123714, y: 0.004560619, z: -0.016685}
-      rotation: {x: -0.029060975, y: -0.70650935, z: -0.029060975, w: 0.70650935}
-      scale: {x: 1, y: 1, z: 1}
-    - name: R_Hip
-      parentName: Pelvis
-      position: {x: 0.26111698, y: -0.09159761, z: 0.070105225}
-      rotation: {x: 0.69611436, y: 0.7179309, z: -1.335877e-18, w: -8.65853e-17}
-      scale: {x: 1, y: 1, z: 1}
-    - name: R_Knee
-      parentName: R_Hip
-      position: {x: -0.26113367, y: -0.0015102807, z: -0.0019986315}
-      rotation: {x: 0, y: -0, z: -0.005394062, w: 0.99998546}
-      scale: {x: 1, y: 1, z: 1}
-    - name: R_Heel
-      parentName: R_Knee
-      position: {x: -0.21663809, y: 0.0014565008, z: 0.084941834}
-      rotation: {x: 0.6922318, y: 0.72167534, z: -1.8028995e-18, w: -8.657684e-17}
-      scale: {x: 1, y: 1, z: 1}
-    - name: R_Toe_1
-      parentName: R_Heel
-      position: {x: -0.0076366174, y: 0.012274844, z: 0.174648}
-      rotation: {x: 0, y: -0, z: -0, w: 1}
-      scale: {x: 1, y: 1, z: 1}
-    - name: R_Toe_point_1
-      parentName: R_Toe_1
-      position: {x: -0.0065063825, y: -0.0105675, z: 0.1353633}
-      rotation: {x: 0, y: -0, z: -0, w: 1}
-      scale: {x: 1, y: 1, z: 1}
-    - name: R_Toe_2
-      parentName: R_Heel
-      position: {x: -0.08496342, y: 0.010701233, z: 0.13373412}
-      rotation: {x: 0.026413828, y: 0.7066133, z: 0.026413828, w: 0.7066133}
-      scale: {x: 1, y: 1, z: 1}
-    - name: R_Toe_point_2
-      parentName: R_Toe_2
-      position: {x: -0.15390868, y: -0.007282075, z: -0.02976284}
-      rotation: {x: -0.026413828, y: -0.7066133, z: -0.026413828, w: 0.7066133}
-      scale: {x: 1, y: 1, z: 1}
-    - name: R_Toe_3
-      parentName: R_Heel
-      position: {x: 0.06644587, y: 0.010701233, z: 0.13373412}
-      rotation: {x: 0.029060986, y: 0.70650935, z: 0.029060986, w: 0.70650935}
-      scale: {x: 1, y: 1, z: 1}
-    - name: R_Toe_point_3
-      parentName: R_Toe_3
-      position: {x: -0.16123724, y: -0.0045606233, z: 0.016684877}
-      rotation: {x: -0.029060975, y: -0.70650935, z: -0.029060975, w: 0.70650935}
-      scale: {x: 1, y: 1, z: 1}
     - name: Spine_2
       parentName: Pelvis
       position: {x: -0, y: 0.13816643, z: -0.07209087}
@@ -488,6 +404,36 @@ ModelImporter:
       position: {x: -0, y: 0.3616006, z: 0.018484741}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
+    - name: Neck_point1
+      parentName: Spine_1
+      position: {x: -0, y: 0.11639754, z: 0.10351543}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Neck_point
+      parentName: Neck_point1
+      position: {x: -0, y: 0.060212534, z: 0.0816453}
+      rotation: {x: -0.15515007, y: 0.6898757, z: -0.15515007, w: 0.6898757}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Head_Point
+      parentName: Neck_point
+      position: {x: -0.28007165, y: 0, z: 0}
+      rotation: {x: 0.15515009, y: -0.6898757, z: 0.15515009, w: 0.6898757}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Eyes
+      parentName: Head_Point
+      position: {x: -0.00096446916, y: 0.057666473, z: -0.98764783}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1.0431592, y: 1.0431592, z: 1.0431592}
+    - name: pCube1
+      parentName: Eyes
+      position: {x: -0.27211988, y: -10.640046, z: 1.8552972}
+      rotation: {x: 1.2246467e-16, y: 1.4997598e-32, z: 1.2246467e-16, w: 1}
+      scale: {x: 25.271467, y: 25.271467, z: 25.271467}
+    - name: pCube2
+      parentName: Eyes
+      position: {x: -0.094062, y: -10.640046, z: 1.8552972}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 25.271467, y: 25.271467, z: 25.271467}
     - name: R_Shoulder
       parentName: Spine_1
       position: {x: 0.29733533, y: -0.0065266495, z: 0.008251562}
@@ -673,39 +619,104 @@ ModelImporter:
       position: {x: 0.06649868, y: 0.0015567675, z: 0.065712295}
       rotation: {x: 0, y: 0, z: 0.4060661, w: 0.9138437}
       scale: {x: 1, y: 1, z: 1}
-    - name: Neck_point1
-      parentName: Spine_1
-      position: {x: -0, y: 0.11639754, z: 0.10351543}
+    - name: L_Hip
+      parentName: Pelvis
+      position: {x: -0.26111698, y: -0.09159761, z: 0.070105225}
+      rotation: {x: 0, y: 0, z: -0.7179309, w: 0.69611436}
+      scale: {x: 1, y: 1, z: 1}
+    - name: L_Knee
+      parentName: L_Hip
+      position: {x: 0.26113367, y: 0.0015105647, z: 0.0019989999}
+      rotation: {x: 0, y: -0, z: -0.005394062, w: 0.99998546}
+      scale: {x: 1, y: 1, z: 1}
+    - name: L_Heel
+      parentName: L_Knee
+      position: {x: 0.21663792, y: -0.001456507, z: -0.084942}
+      rotation: {x: 0.6922318, y: 0.72167534, z: -1.8028995e-18, w: -8.657684e-17}
+      scale: {x: 1, y: 1, z: 1}
+    - name: L_Toe_1
+      parentName: L_Heel
+      position: {x: 0.0076369997, y: -0.0122748, z: -0.174648}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
-    - name: Neck_point
-      parentName: Neck_point1
-      position: {x: -0, y: 0.060212534, z: 0.0816453}
-      rotation: {x: -0.15515007, y: 0.6898757, z: -0.15515007, w: 0.6898757}
+    - name: L_Toe_point_1
+      parentName: L_Toe_1
+      position: {x: 0.006506, y: 0.0105675, z: -0.1353631}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
-    - name: Head_Point
-      parentName: Neck_point
-      position: {x: -0.28007165, y: 0, z: 0}
-      rotation: {x: 0.15515009, y: -0.6898757, z: 0.15515009, w: 0.6898757}
+    - name: L_Toe_2
+      parentName: L_Heel
+      position: {x: 0.084962994, y: -0.0107012, z: -0.13373399}
+      rotation: {x: 0.026413828, y: 0.7066133, z: 0.026413828, w: 0.7066133}
+      scale: {x: 1, y: 1, z: 1}
+    - name: L_Toe_point_2
+      parentName: L_Toe_2
+      position: {x: 0.15390858, y: 0.0072821015, z: 0.029763}
+      rotation: {x: -0.026413828, y: -0.7066133, z: -0.026413828, w: 0.7066133}
+      scale: {x: 1, y: 1, z: 1}
+    - name: L_Toe_3
+      parentName: L_Heel
+      position: {x: -0.066446, y: -0.0107012, z: -0.13373399}
+      rotation: {x: 0.029060986, y: 0.70650935, z: 0.029060986, w: 0.70650935}
+      scale: {x: 1, y: 1, z: 1}
+    - name: L_Toe_point_3
+      parentName: L_Toe_3
+      position: {x: 0.16123714, y: 0.004560619, z: -0.016685}
+      rotation: {x: -0.029060975, y: -0.70650935, z: -0.029060975, w: 0.70650935}
+      scale: {x: 1, y: 1, z: 1}
+    - name: R_Hip
+      parentName: Pelvis
+      position: {x: 0.26111698, y: -0.09159761, z: 0.070105225}
+      rotation: {x: 0.69611436, y: 0.7179309, z: -1.335877e-18, w: -8.65853e-17}
+      scale: {x: 1, y: 1, z: 1}
+    - name: R_Knee
+      parentName: R_Hip
+      position: {x: -0.26113367, y: -0.0015102807, z: -0.0019986315}
+      rotation: {x: 0, y: -0, z: -0.005394062, w: 0.99998546}
+      scale: {x: 1, y: 1, z: 1}
+    - name: R_Heel
+      parentName: R_Knee
+      position: {x: -0.21663809, y: 0.0014565008, z: 0.084941834}
+      rotation: {x: 0.6922318, y: 0.72167534, z: -1.8028995e-18, w: -8.657684e-17}
+      scale: {x: 1, y: 1, z: 1}
+    - name: R_Toe_1
+      parentName: R_Heel
+      position: {x: -0.0076366174, y: 0.012274844, z: 0.174648}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: R_Toe_point_1
+      parentName: R_Toe_1
+      position: {x: -0.0065063825, y: -0.0105675, z: 0.1353633}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: R_Toe_2
+      parentName: R_Heel
+      position: {x: -0.08496342, y: 0.010701233, z: 0.13373412}
+      rotation: {x: 0.026413828, y: 0.7066133, z: 0.026413828, w: 0.7066133}
+      scale: {x: 1, y: 1, z: 1}
+    - name: R_Toe_point_2
+      parentName: R_Toe_2
+      position: {x: -0.15390868, y: -0.007282075, z: -0.02976284}
+      rotation: {x: -0.026413828, y: -0.7066133, z: -0.026413828, w: 0.7066133}
+      scale: {x: 1, y: 1, z: 1}
+    - name: R_Toe_3
+      parentName: R_Heel
+      position: {x: 0.06644587, y: 0.010701233, z: 0.13373412}
+      rotation: {x: 0.029060986, y: 0.70650935, z: 0.029060986, w: 0.70650935}
+      scale: {x: 1, y: 1, z: 1}
+    - name: R_Toe_point_3
+      parentName: R_Toe_3
+      position: {x: -0.16123724, y: -0.0045606233, z: 0.016684877}
+      rotation: {x: -0.029060975, y: -0.70650935, z: -0.029060975, w: 0.70650935}
       scale: {x: 1, y: 1, z: 1}
     - name: ikHandle1
-      parentName: Oni_Animation(Clone)
-      position: {x: 0.02395474, y: 0.0029252844, z: -0.031672526}
+      parentName: oni new(Clone)
+      position: {x: 0.02395474, y: 0.0017297056, z: -0.037968293}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: ikHandle2
-      parentName: Oni_Animation(Clone)
-      position: {x: -0.023954716, y: 0.0029252951, z: -0.031672508}
-      rotation: {x: 0, y: -0, z: -0, w: 1}
-      scale: {x: 1, y: 1, z: 1}
-    - name: ikHandle3
-      parentName: Oni_Animation(Clone)
-      position: {x: 0.050669737, y: 0.049342636, z: -0.029113797}
-      rotation: {x: 0, y: -0, z: -0, w: 1}
-      scale: {x: 1, y: 1, z: 1}
-    - name: ikHandle4
-      parentName: Oni_Animation(Clone)
-      position: {x: -0.0527703, y: 0.05181586, z: -0.040674437}
+      parentName: oni new(Clone)
+      position: {x: -0.023954716, y: 0.0017297163, z: -0.037968274}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     armTwist: 0.5
@@ -717,10 +728,10 @@ ModelImporter:
     feetSpacing: 0
     rootMotionBoneName: 
     hasTranslationDoF: 0
-    hasExtraRoot: 1
+    hasExtraRoot: 0
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
-  animationType: 3
+  animationType: 2
   humanoidOversampling: 1
   additionalBone: 0
   userData: 
