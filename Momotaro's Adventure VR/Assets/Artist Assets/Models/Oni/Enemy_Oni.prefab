@@ -1622,7 +1622,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2226837485624900528}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0d61d59062bab14459275ebcf013433c, type: 3}
   m_Name: 
@@ -1652,9 +1652,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3371fb392e46eac46b55e400634e3658, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  animator: {fileID: 0}
   horizontal: 0
   vertical: 0
+  tryAttack: 0
 --- !u!114 &2226837486537537232
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1677,12 +1677,13 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2226837485624900528}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7b35cefcafeba574db68a230bae5d0aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   minAttackRange: 1
+  aniAttack: Attack
   attackDelegate: {fileID: 0}
 --- !u!114 &2226837486537537235
 MonoBehaviour:
@@ -1691,13 +1692,13 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2226837485624900528}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 630de971257abb341bdcb49323948882, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 2
-  maxDistanceBetween: 1
+  maxDistanceBetween: 3
   lockScale: {x: 1, y: 0, z: 1}
 --- !u!114 &2226837486537537236
 MonoBehaviour:
