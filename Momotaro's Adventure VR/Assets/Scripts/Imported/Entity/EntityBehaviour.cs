@@ -154,6 +154,7 @@ public class EntityBehaviour : Entity
 
     //-------------------------
     //-----State functions-----
+
     //-------------------------
 
     #region State Functions
