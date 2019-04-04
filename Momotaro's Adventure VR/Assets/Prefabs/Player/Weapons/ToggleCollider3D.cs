@@ -17,6 +17,7 @@ public class ToggleCollider3D : MonoBehaviour
 
     void Start()
     {
+        if (mainCollider == null)
         mainCollider = GetComponent<Collider>();
 
         //Check if the game starts with the collider activated

@@ -52,6 +52,7 @@ public class EntityBehaviour : Entity
     {
         aiMoveTo = GetComponent<AIMoveTo>();
         targetObject = GameObject.FindGameObjectWithTag(targetTag);
+        enemyAttack = GetComponent<EnemyAttack>();
         
         if (debug)
             DebugSetUp();
@@ -177,13 +178,13 @@ public class EntityBehaviour : Entity
 
     public virtual void StateFollowing()
     {
-        if (aiMoveTo.MoveTo(targetObject.transform.position, moveSpeed, targetRangeToAttack * 0.6f))
+        if (aiMoveTo.MoveTo(targetObject.transform.position, moveSpeed, targetRangeToAttack))// * 0.6f
             SetCurrentState(AIState.Attacking);
     }
 
     public virtual void StateAttacking()
     {
-        if (targetRangeCurrent < targetRangeToAttack)
+        if (targetRangeCurrent <= targetRangeToAttack)
             enemyAttack.Attack();
         else
             SetCurrentState(AIState.Following);

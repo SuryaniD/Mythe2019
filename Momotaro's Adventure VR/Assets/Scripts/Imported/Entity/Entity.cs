@@ -5,9 +5,9 @@ using System;
 
 public enum teamTypes
 {
-        Noone,
-        Friendly,
-        Enemy
+    Noone,
+    Friendly,
+    Enemy
 }
 
 public enum entityStates
@@ -34,6 +34,7 @@ public class Entity : MonoBehaviour
             entityStateCurrent = entityStates.Dead;
         }
     }
+
     private void Start()
     {
         healthCurrent = startinghealth;

@@ -21,6 +21,8 @@ public class EnemyAttack : MonoBehaviour
 
     public void Attack()
     {
+        anim.Play(aniAttack);
+
         DealDamage();
     }
 
