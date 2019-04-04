@@ -1,16 +1,35 @@
 fileFormatVersion: 2
-guid: 7767f14f3921ca947be047244f3e40da
+guid: a8cbd22e4290e654da75531202ead532
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
-    100000: //RootNode
-    100002: Map:Symmetry_2
-    400000: //RootNode
-    400002: Map:Symmetry_2
-    2100000: Map_Symmetry_2Mat
-    2300000: Map:Symmetry_2
-    3300000: Map:Symmetry_2
-    4300000: Map:Symmetry_2
+    100000: Doors_Side_1
+    100002: Doors_Side_2
+    100004: Ground
+    100006: Map
+    100008: //RootNode
+    400000: Doors_Side_1
+    400002: Doors_Side_2
+    400004: Ground
+    400006: Map
+    400008: //RootNode
+    2100000: Doors_Side_1Mat
+    2100002: Doors_Side_2Mat
+    2100004: GroundMat
+    2100006: MapMat
+    2300000: Doors_Side_1
+    2300002: Doors_Side_2
+    2300004: Ground
+    2300006: Map
+    3300000: Doors_Side_1
+    3300002: Doors_Side_2
+    3300004: Ground
+    3300006: Map
+    4300000: Doors_Side_1
+    4300002: Doors_Side_2
+    4300004: Ground
+    4300006: Map
+    2186277476908879412: ImportLogs
   externalObjects: {}
   materials:
     importMaterials: 1
