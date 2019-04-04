@@ -8,27 +8,51 @@ ModelImporter:
     100004: Ground
     100006: Map
     100008: //RootNode
+    100010: Door_1
+    100012: Door_2
+    100014: Door_3
+    100016: Door_4
     400000: Doors_Side_1
     400002: Doors_Side_2
     400004: Ground
     400006: Map
     400008: //RootNode
+    400010: Door_1
+    400012: Door_2
+    400014: Door_3
+    400016: Door_4
     2100000: Doors_Side_1Mat
     2100002: Doors_Side_2Mat
     2100004: GroundMat
     2100006: MapMat
+    2100008: Door_1Mat
+    2100010: Door_2Mat
+    2100012: Door_3Mat
+    2100014: Door_4Mat
     2300000: Doors_Side_1
     2300002: Doors_Side_2
     2300004: Ground
     2300006: Map
+    2300008: Door_1
+    2300010: Door_2
+    2300012: Door_3
+    2300014: Door_4
     3300000: Doors_Side_1
     3300002: Doors_Side_2
     3300004: Ground
     3300006: Map
+    3300008: Door_1
+    3300010: Door_2
+    3300012: Door_3
+    3300014: Door_4
     4300000: Doors_Side_1
     4300002: Doors_Side_2
     4300004: Ground
     4300006: Map
+    4300008: Door_1
+    4300010: Door_2
+    4300012: Door_3
+    4300014: Door_4
     2186277476908879412: ImportLogs
   externalObjects: {}
   materials:
