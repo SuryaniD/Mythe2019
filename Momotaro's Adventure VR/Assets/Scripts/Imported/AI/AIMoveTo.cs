@@ -63,6 +63,9 @@ public class AIMoveTo : MonoBehaviour
         Vector3 _pos = transform.position;
         Vector3 _newPos = new Vector3(_target.x * lockScale.x, _target.y * lockScale.y, _target.z * lockScale.z);
 
+        //Check if the scale is 0, if it is then dont move along that axis
+        _newPos.y = (lockScale.y == 0) ? _pos.y : _newPos.y;
+
         bool _return = false;
         float _distance = Vector3.Distance(_pos, _newPos);
 

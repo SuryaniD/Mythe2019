@@ -13,6 +13,7 @@ public enum teamTypes
 public enum entityStates
 {
     Alive,
+    Dying,
     Dead
 }
 
@@ -31,7 +32,13 @@ public class Entity : MonoBehaviour
     {
         if(healthCurrent <= 0)
         {
-            entityStateCurrent = entityStates.Dead;
+            entityStateCurrent = entityStates.Dying;
+
+            if (entityStateCurrent != entityStates.Dead)
+            {
+                entityStateCurrent = entityStates.Dead;
+                EntityDie();
+            }
         }
     }
 
@@ -55,6 +62,13 @@ public class Entity : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// Sets the entity to non-active
+    /// </summary>
+    public void EntityDie()
+    {
+
+    }
 
     /// <summary>
     /// Sets the entity to non-active
