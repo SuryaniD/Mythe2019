@@ -1,28 +1,16 @@
 fileFormatVersion: 2
-guid: 8db8939eef230be42be31cbd1fb5dc7f
+guid: 208719768230e2e4ea2430a5446215b6
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
-    100000: Map:Cube
-    100002: //RootNode
-    100004: front1
-    100006: Stone:Cube
-    400000: Map:Cube
-    400002: //RootNode
-    400004: front1
-    400006: Stone:Cube
-    2100000: Map_CubeMat
-    2100002: front1Mat
-    2100004: Stone_CubeMat
-    2300000: Map:Cube
-    2300002: front1
-    2300004: Stone:Cube
-    3300000: Map:Cube
-    3300002: front1
-    3300004: Stone:Cube
-    4300000: Map:Cube
-    4300002: front1
-    4300004: Stone:Cube
+    100000: //RootNode
+    100002: pPlane9
+    400000: //RootNode
+    400002: pPlane9
+    2100000: pPlane9Mat
+    2300000: pPlane9
+    3300000: pPlane9
+    4300000: pPlane9
   externalObjects: {}
   materials:
     importMaterials: 1

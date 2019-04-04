@@ -1,28 +1,47 @@
 fileFormatVersion: 2
-guid: 8db8939eef230be42be31cbd1fb5dc7f
+guid: 139d3140b0e8cf842adcad7b75e4c2ad
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
-    100000: Map:Cube
-    100002: //RootNode
-    100004: front1
-    100006: Stone:Cube
-    400000: Map:Cube
-    400002: //RootNode
-    400004: front1
-    400006: Stone:Cube
-    2100000: Map_CubeMat
-    2100002: front1Mat
-    2100004: Stone_CubeMat
-    2300000: Map:Cube
-    2300002: front1
-    2300004: Stone:Cube
-    3300000: Map:Cube
-    3300002: front1
-    3300004: Stone:Cube
-    4300000: Map:Cube
-    4300002: front1
-    4300004: Stone:Cube
+    100000: Door_1
+    100002: Door_2
+    100004: Door_3
+    100006: Door_4
+    100008: Ground
+    100010: Map
+    100012: //RootNode
+    400000: Door_1
+    400002: Door_2
+    400004: Door_3
+    400006: Door_4
+    400008: Ground
+    400010: Map
+    400012: //RootNode
+    2100000: Door_1Mat
+    2100002: Door_2Mat
+    2100004: Door_3Mat
+    2100006: Door_4Mat
+    2100008: GroundMat
+    2100010: MapMat
+    2300000: Door_1
+    2300002: Door_2
+    2300004: Door_3
+    2300006: Door_4
+    2300008: Ground
+    2300010: Map
+    3300000: Door_1
+    3300002: Door_2
+    3300004: Door_3
+    3300006: Door_4
+    3300008: Ground
+    3300010: Map
+    4300000: Door_1
+    4300002: Door_2
+    4300004: Door_3
+    4300006: Door_4
+    4300008: Ground
+    4300010: Map
+    2186277476908879412: ImportLogs
   externalObjects: {}
   materials:
     importMaterials: 1
@@ -57,6 +76,7 @@ ModelImporter:
     globalScale: 1
     meshCompression: 0
     addColliders: 0
+    useSRGBMaterialColor: 1
     importVisibility: 1
     importBlendShapes: 1
     importCameras: 1
@@ -81,6 +101,9 @@ ModelImporter:
     normalImportMode: 0
     tangentImportMode: 3
     normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
   importAnimation: 1
   copyAvatar: 0
   humanDescription:
@@ -95,7 +118,6 @@ ModelImporter:
     legStretch: 0.05
     feetSpacing: 0
     rootMotionBoneName: 
-    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
     hasTranslationDoF: 0
     hasExtraRoot: 0
     skeletonHasParents: 1
