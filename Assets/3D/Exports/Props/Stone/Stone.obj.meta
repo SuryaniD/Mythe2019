@@ -5,12 +5,18 @@ ModelImporter:
   fileIDToRecycleName:
     100000: Map:Cube
     100002: //RootNode
+    100004: Cube
     400000: Map:Cube
     400002: //RootNode
+    400004: Cube
     2100000: Map_CubeMat
+    2100002: lambert2SG
     2300000: Map:Cube
+    2300002: Cube
     3300000: Map:Cube
+    3300002: Cube
     4300000: Map:Cube
+    4300002: Cube
   externalObjects: {}
   materials:
     importMaterials: 1
