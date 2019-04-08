@@ -1,0 +1,50 @@
+﻿//By: Jarno van Lierop
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class EnemyAttack : MonoBehaviour
+{
+    public Entity entity;
+    private Animator anim;
+    private float enemyDamage;
+    private bool targetWithinRange;
+<<<<<<< HEAD
+    public float minAttackRange = 7.5f;
+=======
+    public float minAttackRange = 7.5f;//minimum range for attacking
+
+    public string aniAttack = "Attack";
+
+    [SerializeField]
+    private EntityBehaviour attackDelegate;
+>>>>>>> develop
+
+    void Start()
+    {
+        anim = GetComponent<Animator>();
+        targetWithinRange = false;
+    }
+
+    public void Attack()
+    {
+<<<<<<< HEAD
+        anim.Play("Attack1h1");
+=======
+        anim.Play(aniAttack);
+>>>>>>> develop
+        DealDamage();
+    }
+
+    void DealDamage()
+    {
+<<<<<<< HEAD
+        entity.TakeDamage(teamTypes.Friendly);
+=======
+        
+>>>>>>> develop
+    }
+
+    
+
+}
