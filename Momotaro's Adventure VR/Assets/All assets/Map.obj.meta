@@ -41,6 +41,10 @@ ModelImporter:
     2100018: Map_Door_4Mat
     2100020: Map_GroundMat
     2100022: Map_MapMat
+    2100024: lambert3SG
+    2100026: initialShadingGroup
+    2100028: lambert2SG
+    2100030: lambert4SG
     2300000: Door_1
     2300002: Door_2
     2300004: Door_3
