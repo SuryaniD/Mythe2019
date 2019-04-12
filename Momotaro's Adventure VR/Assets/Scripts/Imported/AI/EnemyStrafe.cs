@@ -4,15 +4,16 @@ using UnityEngine;
 
 public class EnemyStrafe : MonoBehaviour
 {
-    // Start is called before the first frame update
     void Start()
     {
-        
+        EnemyNav nav = GetComponent<EnemyNav>();
+        nav.Arrived += DoStrafeCheck;
     }
+    
+    void DoStrafeCheck()
+    { // put strafing logics here
+        Debug.Log("delegate went off --strafe");
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+
     }
 }

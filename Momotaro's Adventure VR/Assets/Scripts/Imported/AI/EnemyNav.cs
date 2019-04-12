@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using UnityEngine.AI;
 using System.Collections;
-
+using System;
 
 public class EnemyNav : MonoBehaviour
 {
@@ -12,6 +12,8 @@ public class EnemyNav : MonoBehaviour
 
     private float _xOffset = 1.1f;
     private float _dist;
+
+    public Action Arrived;
 
     private void Awake()
     {
@@ -31,6 +33,7 @@ public class EnemyNav : MonoBehaviour
         {
             agent.destination = agent.transform.position;
             agent.isStopped = true;
+            Arrived?.Invoke();
         }
         else
         {
