@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class EnemyAttack : MonoBehaviour
 {
-    public Entity entity;
+ //   public Entity entity;
     private Animator anim;
     private float enemyDamage;
     private bool targetWithinRange;
@@ -28,7 +28,7 @@ public class EnemyAttack : MonoBehaviour
 
     void DealDamage()
     {
-        entity.TakeDamage(teamTypes.Friendly);
+    //    entity.TakeDamage(teamTypes.Friendly);
     }
 
     
