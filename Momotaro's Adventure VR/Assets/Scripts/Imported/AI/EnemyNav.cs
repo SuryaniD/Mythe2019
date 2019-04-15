@@ -8,7 +8,7 @@ public class EnemyNav : MonoBehaviour
     [SerializeField]
     private NavMeshAgent agent;
     [SerializeField]
-    private Transform goal;
+    public Transform goal;
 
     private float _xOffset = 1.1f;
     private float _dist;
