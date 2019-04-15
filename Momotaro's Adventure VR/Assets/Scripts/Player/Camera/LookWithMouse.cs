@@ -37,8 +37,14 @@ public class LookWithMouse : MonoBehaviour
         //Rotate the transform by the currentRotation influenced by the invertion
         transform.rotation = Quaternion.Euler(currentRotation.y * (invertVertical ? 1 : -1), currentRotation.x * (invertHorizontal ? -1 : 1), 0);
 
-        /*if (Input.GetMouseButtonDown(0))
-            Cursor.lockState = CursorLockMode.Locked;*/
+        //Switch cursor mode for the editor
+        if (Input.GetMouseButtonDown(2))
+        {
+            if (Cursor.lockState != CursorLockMode.Locked)
+                Cursor.lockState = CursorLockMode.Locked;
+            else
+                Cursor.lockState = CursorLockMode.None;
+        }
 
     }
 }
