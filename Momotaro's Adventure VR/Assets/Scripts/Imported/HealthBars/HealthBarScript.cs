@@ -16,6 +16,7 @@ public class HealthBarScript : MonoBehaviour
 
     private float startingValue = 100f;
     public Entity entity;
+    public EntityBehaviour entityBehaviour;
     private float updatedPlayerHealth;
     private float updatedEnemyHealth;
 
@@ -28,13 +29,25 @@ public class HealthBarScript : MonoBehaviour
 
     public void PlayerHealthChange(float _value)
     {
-        float amountPlayerHealth = (_value / 100.0f) * 180.0f / 360.0f;
-        playerHealthBar.fillAmount = Mathf.Clamp(amountPlayerHealth, 0f, 100f);
+        if (_value <= 0) {
+            entityBehaviour.aiStateCurrent = EntityBehaviour.AIState.Dead;
+        } else {
+            float amountPlayerHealth = (_value / 100.0f) * 180.0f / 360.0f;
+            playerHealthBar.fillAmount = Mathf.Clamp(amountPlayerHealth, 0f, 100f);
+        }
     }
 
     public void EnemyHealthChange(float _value)
     {
-        float amountEnemyHealth = _value;
-        enemyHealthBar.fillAmount = amountEnemyHealth/100;
+        if (_value < 0)
+        {
+            entityBehaviour.aiStateCurrent = EntityBehaviour.AIState.Dead;
+        }
+        else
+        {
+            float amountEnemyHealth = _value;
+            enemyHealthBar.fillAmount = amountEnemyHealth / 100;
+            Debug.Log(amountEnemyHealth);
+        }
     }
 }

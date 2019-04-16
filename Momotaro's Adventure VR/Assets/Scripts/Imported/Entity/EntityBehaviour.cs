@@ -14,6 +14,7 @@ public class EntityBehaviour : Entity
         Following,
         Attacking,
         Searching,
+        Dead,
     }
     
     public AIState aiStateCurrent = AIState.Idle;
@@ -110,6 +111,10 @@ public class EntityBehaviour : Entity
             case AIState.Attacking:
                 debugText.text = "Attacking";
                 break;
+
+            case AIState.Dead:
+                debugText.text = "Dead";
+                break;
         }
     }
 
@@ -137,6 +142,10 @@ public class EntityBehaviour : Entity
             case AIState.Attacking:
                 StateAttacking();
                 break;
+
+            case AIState.Dead:
+                StateDead();
+                break;
         }
 
         return aiStateCurrent;
@@ -155,6 +164,7 @@ public class EntityBehaviour : Entity
 
     //-------------------------
     //-----State functions-----
+
     //-------------------------
 
     #region State Functions
@@ -188,6 +198,11 @@ public class EntityBehaviour : Entity
             enemyAttack.Attack();
         else
             SetCurrentState(AIState.Following);
+    }
+
+    public virtual void StateDead()
+    {
+        Debug.Log("enemy died");
     }
     #endregion
 
