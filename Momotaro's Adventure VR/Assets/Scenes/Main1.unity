@@ -200,6 +200,26 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 1.0000002
       objectReference: {fileID: 0}
+    - target: {fileID: 6442029324321335365, guid: 59b70fef7451cc04db460d40617a7aff,
+        type: 3}
+      propertyPath: m_Color.r
+      value: 0.7264151
+      objectReference: {fileID: 0}
+    - target: {fileID: 6442029324321335365, guid: 59b70fef7451cc04db460d40617a7aff,
+        type: 3}
+      propertyPath: m_Color.g
+      value: 0.41460484
+      objectReference: {fileID: 0}
+    - target: {fileID: 6442029324321335365, guid: 59b70fef7451cc04db460d40617a7aff,
+        type: 3}
+      propertyPath: m_Color.b
+      value: 0.42903063
+      objectReference: {fileID: 0}
+    - target: {fileID: 6442029324321335365, guid: 59b70fef7451cc04db460d40617a7aff,
+        type: 3}
+      propertyPath: m_FillAmount
+      value: 0.5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 59b70fef7451cc04db460d40617a7aff, type: 3}
 --- !u!1001 &92224253
@@ -1566,6 +1586,7 @@ MonoBehaviour:
   enemyHealthBar: {fileID: 1346746702}
   playerHealthBar: {fileID: 0}
   entity: {fileID: 0}
+  entityBehaviour: {fileID: 0}
 --- !u!114 &1863147967
 MonoBehaviour:
   m_ObjectHideFlags: 0
