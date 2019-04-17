@@ -2,17 +2,16 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+
+[ExecuteInEditMode]
 public class ObjectAnimateTo : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    
+
+    void OnDrawGizmos()
     {
-        
+        Vector3 boxCollider = GetComponent<BoxCollider>().bounds.size;
+        Gizmos.DrawCube(transform.position, boxCollider);
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }
