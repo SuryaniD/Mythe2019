@@ -47,8 +47,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemyHealthBar: {fileID: 1346746702}
   playerHealthBar: {fileID: 0}
-  entity: {fileID: 0}
-  entityBehaviour: {fileID: 0}
+  entity: {fileID: 6962414733672069470}
+  entityBehaviour: {fileID: 6962414733672069470}
 --- !u!114 &1863147967
 MonoBehaviour:
   m_ObjectHideFlags: 0

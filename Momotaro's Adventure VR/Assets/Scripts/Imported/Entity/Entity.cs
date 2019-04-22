@@ -37,7 +37,7 @@ public class Entity : MonoBehaviour
             if (entityStateCurrent != entityStates.Dead)
             {
                 entityStateCurrent = entityStates.Dead;
-                EntityDie();
+             //   EntityDie();
             }
         }
     }
@@ -65,10 +65,9 @@ public class Entity : MonoBehaviour
     /// <summary>
     /// Sets the entity to non-active
     /// </summary>
-    public void EntityDie()
+    public void EntityDie(GameObject ent)
     {
-        Destroy(gameObject);
-        Debug.Log("dead");
+        Destroy(ent);
     }
 
     /// <summary>

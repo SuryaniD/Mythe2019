@@ -22,7 +22,7 @@ public class HealthBarScript : MonoBehaviour
 
     private void Start()
     {
-        entity = GetComponent<Entity>();
+      //  entity = GetComponent<Entity>(); // this is wrong it tries to get entity from Healthbar
         PlayerHealthChange(startingValue);
         EnemyHealthChange(startingValue);
     }
@@ -39,9 +39,11 @@ public class HealthBarScript : MonoBehaviour
 
     public void EnemyHealthChange(float _value)
     {
-        if (_value < 0)
+        if (_value <= 0)
         {
-            entityBehaviour.aiStateCurrent = EntityBehaviour.AIState.Dead;
+            //        entityBehaviour.aiStateCurrent = EntityBehaviour.AIState.Dead
+            entity.EntityDie(transform.parent.gameObject);
+            Debug.Log("dead");
         }
         else
         {
