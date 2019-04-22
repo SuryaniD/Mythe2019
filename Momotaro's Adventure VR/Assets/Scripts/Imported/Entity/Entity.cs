@@ -67,7 +67,8 @@ public class Entity : MonoBehaviour
     /// </summary>
     public void EntityDie()
     {
-
+        Destroy(gameObject);
+        Debug.Log("dead");
     }
 
     /// <summary>

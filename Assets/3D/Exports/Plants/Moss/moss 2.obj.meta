@@ -1,16 +1,16 @@
 fileFormatVersion: 2
-guid: 7767f14f3921ca947be047244f3e40da
+guid: c3293b78bd76b9747824baf61d9f2651
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
     100000: //RootNode
-    100002: Map:Symmetry_2
+    100002: pPlane9
     400000: //RootNode
-    400002: Map:Symmetry_2
-    2100000: Map_Symmetry_2Mat
-    2300000: Map:Symmetry_2
-    3300000: Map:Symmetry_2
-    4300000: Map:Symmetry_2
+    400002: pPlane9
+    2100000: pPlane9Mat
+    2300000: pPlane9
+    3300000: pPlane9
+    4300000: pPlane9
   externalObjects: {}
   materials:
     importMaterials: 1

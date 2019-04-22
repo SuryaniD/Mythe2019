@@ -75,10 +75,10 @@ public class GameManagerNew : MonoBehaviour
 
             case GameStates.InGameState:
 
-                if (entitiesAlive.CheckAmountEntitiesAlive(this.gameObject, teamTypes.Enemy) == 0)
-                {
-                    SetCurrentGameState(GameStates.WinState);
-                }
+                //if (entitiesAlive.CheckAmountEntitiesAlive(this.gameObject, teamTypes.Enemy) == 0)
+                //{
+                //    SetCurrentGameState(GameStates.WinState);
+                //}
 
             break;
 

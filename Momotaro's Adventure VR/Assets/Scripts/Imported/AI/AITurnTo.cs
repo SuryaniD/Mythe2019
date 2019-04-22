@@ -8,6 +8,10 @@ public class AITurnTo : MonoBehaviour
 
     public Vector3 rotationSpeedScale = new Vector3(1, 1, 1);
 
+    private void Start()
+    {
+       target = GameObject.FindGameObjectWithTag("Player").transform;
+    }
     private void Update()
     {
         TurnToTransform(target);

@@ -1,17 +1,16 @@
 fileFormatVersion: 2
-guid: 2fbeeeda006fbce4cbe82c8f9a564d4c
+guid: c39cadbe34a847f4ca33a97cbd975192
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
-    100000: Knots
-    100002: //RootNode
-    400000: Knots
-    400002: //RootNode
-    2100000: KnotsMat
-    2300000: Knots
-    3300000: Knots
-    4300000: Knots
-    2186277476908879412: ImportLogs
+    100000: //RootNode
+    100002: pPlane1
+    400000: //RootNode
+    400002: pPlane1
+    2100000: pPlane1Mat
+    2300000: pPlane1
+    3300000: pPlane1
+    4300000: pPlane1
   externalObjects: {}
   materials:
     importMaterials: 1
