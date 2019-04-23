@@ -18,6 +18,8 @@ public class GameManagerNew : MonoBehaviour
 
     public GameObject player;
 
+    public int Score { get; set; }
+
     [SerializeField]
     private List<GameObject> enemyObjects = new List<GameObject>();
 

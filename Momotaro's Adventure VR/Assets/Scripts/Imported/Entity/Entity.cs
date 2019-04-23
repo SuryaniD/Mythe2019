@@ -19,7 +19,7 @@ public enum entityStates
 
 public class Entity : MonoBehaviour
 {
-
+    public GameManagerNew gameManagerNew;
     public HealthBarScript hbScript;
     public teamTypes teamCurrent = teamTypes.Enemy;
     public entityStates entityStateCurrent = entityStates.Alive;
@@ -67,6 +67,7 @@ public class Entity : MonoBehaviour
     /// </summary>
     public void EntityDie(GameObject ent)
     {
+        gameManagerNew.Score += 1;
         Destroy(ent);
     }
 

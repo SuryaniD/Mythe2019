@@ -181,6 +181,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0d61d59062bab14459275ebcf013433c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gameManagerNew: {fileID: 4694909876154286521, guid: 03c31017c54a1e24fa27cfc2e1185fbb,
+    type: 3}
   hbScript: {fileID: 1863147966}
   teamCurrent: 2
   entityStateCurrent: 0
