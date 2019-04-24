@@ -23,6 +23,7 @@ public class ObjectAnimateTo : MonoBehaviour
     void Start()
     {
         startPoint = transform.position;
+        LockAxes(lockAxes);
     }
 
     void FixedUpdate()
@@ -41,6 +42,10 @@ public class ObjectAnimateTo : MonoBehaviour
     public bool AnimateToPosition(Vector3 _position, float _speed)
     {
         bool _return = false;
+
+        _position.x = lockAxes.x * _position.x;
+        _position.y = lockAxes.y * _position.y;
+        _position.z = lockAxes.z * _position.z;
 
         if (Vector3.Distance(transform.position, _position) <= 0)
             _return = true;
@@ -84,11 +89,10 @@ public class ObjectAnimateTo : MonoBehaviour
         {
             Vector3 boxCollider = GetComponent<BoxCollider>().bounds.size;
             Gizmos.color = Color.green;
-            Gizmos.DrawWireCube(endPoint, boxCollider);
+            Gizmos.DrawWireCube(endPoint, new Vector3(1, 1, 1));
+            //UnityEditor.Handles.Draw
         }
-        
     }
-
 }
 
 

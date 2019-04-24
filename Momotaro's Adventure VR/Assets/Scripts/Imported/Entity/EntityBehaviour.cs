@@ -5,17 +5,20 @@ using UnityEngine;
 using UnityEngine.AI;
 using UnityEngine.UI;
 
+
+public enum AIState
+{
+    Idle = 0,
+    Alerted,
+    Following,
+    Attacking,
+    Searching,
+    Dead,
+}
+
 public class EntityBehaviour : Entity
 {
-    public enum AIState
-    {
-        Idle = 0,
-        Alerted,
-        Following,
-        Attacking,
-        Searching,
-        Dead,
-    }
+    
     
     public AIState aiStateCurrent = AIState.Idle;
 
@@ -80,6 +83,8 @@ public class EntityBehaviour : Entity
 
         //Check the current range between the target
         targetRangeCurrent = CheckDistanceToObj(targetObject.transform.position);
+
+        CheckHealthState();
     }
 
     //---------------

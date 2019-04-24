@@ -28,9 +28,13 @@ public class GameManagerNew : MonoBehaviour
     [SerializeField]
     private List<Transform> enemySpawnPoints = new List<Transform>();
 
+    [Header("Alive Entity List")]
+    [SerializeField]
+    private List<GameObject> entityAliveObjects = new List<GameObject>();
+
     //Components
     private SpawnEntities spawnEntities;
-    private CheckEntitiesAlive entitiesAlive;
+    private CheckEntitiesAlive checkEntitiesAlive;
 
     //---------------------------------
 
@@ -38,7 +42,7 @@ public class GameManagerNew : MonoBehaviour
     {
         //Get the components
         spawnEntities = GetComponent<SpawnEntities>();
-        entitiesAlive = GetComponent<CheckEntitiesAlive>();
+        checkEntitiesAlive = GetComponent<CheckEntitiesAlive>();
 
         //Get the gameobjects
         player = GameObject.FindGameObjectWithTag("Player");
@@ -66,7 +70,9 @@ public class GameManagerNew : MonoBehaviour
                 //Spawn an Entity when the game begins
                 GameObject _inst = spawnEntities.SpawnEntity(enemyObjects[0], enemySpawnPoints[0].position);
                 //Add the instance as an child to this object for now (Make an pool object)
-                _inst.transform.parent = transform;
+                //_inst.transform.parent = transform;
+                entityAliveObjects.Add(_inst);
+
                 //Add a target to the Entity
                 _inst.GetComponent<EntityBehaviour>().targetObject = player;
                 _inst.GetComponent<AITurnTo>().target = player.transform;
@@ -79,12 +85,14 @@ public class GameManagerNew : MonoBehaviour
 
             case GameStates.InGameState:
 
-                //if (entitiesAlive.CheckAmountEntitiesAlive(this.gameObject, teamTypes.Enemy) == 0)
-                //{
-                //    SetCurrentGameState(GameStates.WinState);
-                //}
+                //Check if there are any Enemy Entities alive
+                if (checkEntitiesAlive.CheckAmountEntitiesAlive(entityAliveObjects, TeamTypes.Enemy) == 0)
+                {
+                    //If there arent any, The player has won this round
+                    SetCurrentGameState(GameStates.WinState);
+                }
 
-            break;
+                break;
 
             case GameStates.WinState:
 

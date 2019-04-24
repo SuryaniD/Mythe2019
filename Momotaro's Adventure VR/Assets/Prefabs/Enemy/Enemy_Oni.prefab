@@ -186,6 +186,7 @@ MonoBehaviour:
   teamCurrent: 2
   entityStateCurrent: 0
   healthCurrent: 100
+  attackDamage: 50
   aiStateCurrent: 0
   targetTag: Player
   targetObject: {fileID: 0}

@@ -6,12 +6,21 @@ public class ColliderTrigger : MonoBehaviour
 {
     public string playerTag = "Player";
     public Transform resetPos;
+    public bool canTeleport = false;
+
+    private GameManagerNew _gManager;
+
+    void Start()
+    {
+        _gManager = GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManagerNew>();
+    }
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.tag == playerTag)
+        if (canTeleport && other.gameObject.tag == playerTag)
         {
             other.transform.position = resetPos.position;
+            _gManager.SetCurrentGameState(GameStates.BeginState);
         }
     }
 }
