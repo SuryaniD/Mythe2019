@@ -30,20 +30,23 @@ public class Entity : MonoBehaviour
 
     private void FixedUpdate()
     {
-        if(healthCurrent <= 0)
+        if (healthCurrent <= 0)
         {
             entityStateCurrent = entityStates.Dying;
 
             if (entityStateCurrent != entityStates.Dead)
             {
                 entityStateCurrent = entityStates.Dead;
-             //   EntityDie();
+                //   EntityDie();
             }
         }
     }
-
-    private void Start()
+    private void Awake()
     {
+        gameManagerNew = GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManagerNew>();
+    }
+    private void Start()
+    { 
         healthCurrent = startinghealth;
     }
 
@@ -68,6 +71,7 @@ public class Entity : MonoBehaviour
     public void EntityDie(GameObject ent)
     {
         gameManagerNew.Score += 1;
+        gameManagerNew.ScoreUpdated?.Invoke();
         Destroy(ent);
     }
 

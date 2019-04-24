@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System;
 
 public enum GameStates
 {
@@ -19,6 +20,7 @@ public class GameManagerNew : MonoBehaviour
     public GameObject player;
 
     public int Score { get; set; }
+    public Action ScoreUpdated;
 
     [SerializeField]
     private List<GameObject> enemyObjects = new List<GameObject>();
