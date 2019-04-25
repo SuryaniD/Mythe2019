@@ -167,7 +167,7 @@ Rigidbody:
   m_Mass: 1
   m_Drag: 0
   m_AngularDrag: 0
-  m_UseGravity: 0
+  m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
@@ -230,6 +230,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _minimumVelocity: 0.07
   swordloc: {fileID: 0}
+  player: {fileID: 0}
   hbScript: {fileID: 1863147966}
 --- !u!114 &3975473426181379446
 MonoBehaviour:
