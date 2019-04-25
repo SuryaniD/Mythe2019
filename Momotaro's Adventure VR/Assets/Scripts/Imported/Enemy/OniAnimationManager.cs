@@ -6,6 +6,8 @@ public class OniAnimationManager : MonoBehaviour
 {
     private Animator animator;
 
+    private Rigidbody rigidBody;
+
     //Movement variables
     [SerializeField]
     [Range(-1, 1)]
@@ -19,12 +21,15 @@ public class OniAnimationManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        rigidBody = GetComponent<Rigidbody>();
         animator = GetComponent<Animator>();
     }
 
     // Update is called once per frame
     void Update()
     {
+        
+
         ChangeHorizontal(horizontal);
         ChangeVertical(vertical);
 
@@ -60,4 +65,6 @@ public class OniAnimationManager : MonoBehaviour
     {
         animator.Play("Attack");
     }
+
+
 }

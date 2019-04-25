@@ -15,7 +15,8 @@ public class GameManagerNew : MonoBehaviour
 {
     public GameStates gameStateCurrent = GameStates.BeginState;
 
-    public int levelCurrent = 1;
+    public int Level { get; set; }
+    public Action LevelUpdated;
 
     public GameObject player;
 
@@ -35,14 +36,18 @@ public class GameManagerNew : MonoBehaviour
     //Components
     private SpawnEntities spawnEntities;
     private CheckEntitiesAlive checkEntitiesAlive;
+    private OpenLevelDoors openLevelDoors;
 
     //---------------------------------
 
     void Start()
     {
+        //LevelCurrent = 1;
+
         //Get the components
         spawnEntities = GetComponent<SpawnEntities>();
         checkEntitiesAlive = GetComponent<CheckEntitiesAlive>();
+        openLevelDoors = GetComponent<OpenLevelDoors>();
 
         //Get the gameobjects
         player = GameObject.FindGameObjectWithTag("Player");
@@ -67,6 +72,11 @@ public class GameManagerNew : MonoBehaviour
         {
             case GameStates.BeginState:
 
+                Level++;
+
+                //Close the doors fast
+                openLevelDoors.CloseDoors(1000f);
+
                 //Spawn an Entity when the game begins
                 GameObject _inst = spawnEntities.SpawnEntity(enemyObjects[0], enemySpawnPoints[0].position);
                 //Add the instance as an child to this object for now (Make an pool object)
@@ -85,6 +95,8 @@ public class GameManagerNew : MonoBehaviour
 
             case GameStates.InGameState:
 
+                openLevelDoors.CloseDoors(1000f);
+
                 //Check if there are any Enemy Entities alive
                 if (checkEntitiesAlive.CheckAmountEntitiesAlive(entityAliveObjects, TeamTypes.Enemy) == 0)
                 {
@@ -96,7 +108,7 @@ public class GameManagerNew : MonoBehaviour
 
             case GameStates.WinState:
 
-
+                openLevelDoors.OpenDoors(2f);
 
             break;
 

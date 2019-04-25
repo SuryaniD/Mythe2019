@@ -80,7 +80,7 @@ public class AISpotting : EntityBehaviour
     //-----Gizmos draw functions-----
     //-------------------------------
 
-    void OnDrawGizmos()
+    /*void OnDrawGizmos()
     {
         Vector3 _pos = transform.position;
 
@@ -101,7 +101,7 @@ public class AISpotting : EntityBehaviour
 
         //Right
         Gizmos.DrawLine(_pos, targetObject.transform.position);
-    }
+    }*/
 
     IEnumerator AlertedCountDown(float _time)
     {

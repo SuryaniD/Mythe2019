@@ -22,15 +22,8 @@ public class ObjectAnimateTo : MonoBehaviour
 
     void Start()
     {
-        startPoint = transform.position;
+        //startPoint = transform.position;
         LockAxes(lockAxes);
-    }
-
-    void FixedUpdate()
-    {
-        if (AnimateToEndPoint())
-            return;
-
     }
 
     public void LockAxes(Vector3 _axes)
@@ -43,6 +36,8 @@ public class ObjectAnimateTo : MonoBehaviour
     {
         bool _return = false;
 
+        Vector3 _pos = transform.position;
+
         _position.x = lockAxes.x * _position.x;
         _position.y = lockAxes.y * _position.y;
         _position.z = lockAxes.z * _position.z;
@@ -50,7 +45,7 @@ public class ObjectAnimateTo : MonoBehaviour
         if (Vector3.Distance(transform.position, _position) <= 0)
             _return = true;
         else
-            transform.position = Vector3.MoveTowards(transform.position, _position, _speed * Time.deltaTime);
+            transform.position = Vector3.MoveTowards(_pos, _position, _speed * Time.deltaTime);
 
         return _return;
     }
@@ -59,11 +54,11 @@ public class ObjectAnimateTo : MonoBehaviour
     /// Translates the object to the startpoint (Call this for use outside this script)
     /// </summary>
     /// <returns></returns>
-    public bool AnimateToStartPoint()
+    public bool AnimateToStartPoint(float _speed)
     {
         bool _return = false;
 
-        if (AnimateToPosition(startPoint, 2f))
+        if (AnimateToPosition(startPoint, _speed))
             _return = true;
 
         return _return;
@@ -73,25 +68,14 @@ public class ObjectAnimateTo : MonoBehaviour
     /// Translates the object to the endpoint (Call this for use outside this script)
     /// </summary>
     /// <returns></returns>
-    public bool AnimateToEndPoint()
+    public bool AnimateToEndPoint(float _speed)
     {
         bool _return = false;
 
-        if (AnimateToPosition(endPoint, 2f))
+        if (AnimateToPosition(endPoint, _speed))
             _return = true;
 
         return _return;
-    }
-
-    void OnDrawGizmos()
-    {
-        if (showEndPoint)
-        {
-            Vector3 boxCollider = GetComponent<BoxCollider>().bounds.size;
-            Gizmos.color = Color.green;
-            Gizmos.DrawWireCube(endPoint, new Vector3(1, 1, 1));
-            //UnityEditor.Handles.Draw
-        }
     }
 }
 
