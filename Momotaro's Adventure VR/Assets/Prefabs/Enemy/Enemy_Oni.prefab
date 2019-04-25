@@ -228,7 +228,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b9e56932eb631b40ba89a61e9aff589, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _minimumVelocity: 0.07
+  _minimumVelocity: 0.09
   swordloc: {fileID: 0}
   player: {fileID: 0}
   hbScript: {fileID: 1863147966}

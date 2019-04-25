@@ -56,7 +56,7 @@ public class Enemy_HitDetection : MonoBehaviour
             CheckDiff() == true
            )
         {
-            ent.healthCurrent -= 50;
+            ent.healthCurrent -= 20;
             hbScript.EnemyHealthChange(ent.healthCurrent);
             animator.Play("Hit");
         }
