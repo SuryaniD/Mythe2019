@@ -108,7 +108,7 @@ GameObject:
   - component: {fileID: 4699662459680787716}
   - component: {fileID: 108178690824775300}
   - component: {fileID: 6962414733672069470}
-  - component: {fileID: 5967394119039158214}
+  - component: {fileID: 961119631673197811}
   - component: {fileID: 3975473426181379446}
   - component: {fileID: 8358753800238649530}
   - component: {fileID: 2173740687461317493}
@@ -216,7 +216,7 @@ MonoBehaviour:
   enemyAttack: {fileID: 0}
   aiMoveTo: {fileID: 0}
   debug: 0
---- !u!114 &5967394119039158214
+--- !u!114 &961119631673197811
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -225,10 +225,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 184432983246144228}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f76e3d42f308b794d9625325c75c40cb, type: 3}
+  m_Script: {fileID: 11500000, guid: 9b9e56932eb631b40ba89a61e9aff589, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hbScript: {fileID: 1863147966}
+  _minimumVelocity: 0.07
+  swordloc: {fileID: 0}
+  HP: 3
 --- !u!114 &3975473426181379446
 MonoBehaviour:
   m_ObjectHideFlags: 0
