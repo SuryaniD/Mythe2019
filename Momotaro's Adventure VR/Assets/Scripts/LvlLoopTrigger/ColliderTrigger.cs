@@ -19,7 +19,7 @@ public class ColliderTrigger : MonoBehaviour
     {
         if (canTeleport && other.gameObject.tag == playerTag)
         {
-            other.transform.position = resetPos.position;
+            other.transform.root.position = resetPos.position;
             _gManager.SetCurrentGameState(GameStates.BeginState);
         }
     }

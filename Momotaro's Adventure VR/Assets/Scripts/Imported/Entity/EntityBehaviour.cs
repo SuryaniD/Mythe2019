@@ -105,27 +105,27 @@ public class EntityBehaviour : Entity
         switch (aiStateCurrent)
         {
             case AIState.Idle:
-                debugText.text = "Idle";
+              //  debugText.text = "Idle";
                 break;
 
             case AIState.Alerted:
-                debugText.text = "!";
+             //   debugText.text = "!";
                 break;
 
             case AIState.Searching:
-                debugText.text = "?";
+             //   debugText.text = "?";
                 break;
 
             case AIState.Following:
-                debugText.text = "Following";
+             //   debugText.text = "Following";
                 break;
 
             case AIState.Attacking:
-                debugText.text = "Attacking";
+ 
                 break;
 
             case AIState.Dead:
-                debugText.text = "Dead";
+               // debugText.text = "Dead";
                 break;
         }
     }
