@@ -10,16 +10,33 @@ public class Enemy_HitDetection : MonoBehaviour
     [SerializeField]
     private LocationHistory swordloc;
 
-    public int HP = 3;
+    public GameObject player;
+
     Animator animator;
+
+    private EntityBehaviour ent;
+    public HealthBarScript hbScript;
 
     private Vector3 diff;
 
     void Start()
     {
+        Getsword();
         animator = GetComponent<Animator>();
+        ent = this.GetComponent<EntityBehaviour>();
     }
 
+    void Awake()
+    {
+        Getsword();
+    }
+
+    void Getsword()
+    {
+        player = GameObject.FindGameObjectWithTag("Player");
+        //IM SORRY FOR THIS
+        swordloc = player.transform.GetChild(0).GetChild(3).GetChild(0).GetChild(0).GetChild(0).GetComponent<LocationHistory>();
+    }
 
     private bool CheckDiff()
     {
@@ -34,18 +51,15 @@ public class Enemy_HitDetection : MonoBehaviour
     {
         diff = swordloc.locationHistory[0] - swordloc.locationHistory[1];
 
-        if (other.gameObject.tag == "Sword" &&
+        if (
+            other.gameObject.tag == "Sword" &&
             CheckDiff() == true
            )
         {
-          HP -= 1;
-          Debug.Log("hp is now: " + HP);
-          if (HP == 0)
-          {
-              Debug.Log("Death");
-              animator.SetTrigger("Fall1");
-              Destroy(gameObject, 2.0f);
-          }
+            ent.healthCurrent -= 50;
+            hbScript.EnemyHealthChange(ent.healthCurrent);
+            animator.Play("Hit");
         }
+        
     }
 }
