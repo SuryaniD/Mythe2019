@@ -42,8 +42,6 @@ public class GameManagerNew : MonoBehaviour
 
     void Start()
     {
-        //LevelCurrent = 1;
-
         //Get the components
         spawnEntities = GetComponent<SpawnEntities>();
         checkEntitiesAlive = GetComponent<CheckEntitiesAlive>();
@@ -51,6 +49,12 @@ public class GameManagerNew : MonoBehaviour
 
         //Get the gameobjects
         player = GameObject.FindGameObjectWithTag("Player");
+    }
+
+    void Update()
+    {
+        if (Input.GetButtonUp("Escape"))
+            Application.Quit();
     }
 
     void FixedUpdate()
@@ -73,6 +77,7 @@ public class GameManagerNew : MonoBehaviour
             case GameStates.BeginState:
 
                 Level++;
+                LevelUpdated?.Invoke();
 
                 //Close the doors fast
                 openLevelDoors.CloseDoors(1000f);

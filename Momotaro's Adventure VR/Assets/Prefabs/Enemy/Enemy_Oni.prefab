@@ -47,8 +47,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemyHealthBar: {fileID: 1346746702}
   playerHealthBar: {fileID: 0}
-  entity: {fileID: 6962414733672069470}
-  entityBehaviour: {fileID: 6962414733672069470}
+  entity: {fileID: 0}
+  entityBehaviour: {fileID: 0}
 --- !u!114 &1863147967
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -107,7 +107,7 @@ GameObject:
   - component: {fileID: 950685169336170254}
   - component: {fileID: 4699662459680787716}
   - component: {fileID: 108178690824775300}
-  - component: {fileID: 6962414733672069470}
+  - component: {fileID: 4197249044351108243}
   - component: {fileID: 5063155894221062953}
   - component: {fileID: 3975473426181379446}
   - component: {fileID: 8358753800238649530}
@@ -183,10 +183,10 @@ CapsuleCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   m_Radius: 0.06
-  m_Height: 0.32
+  m_Height: 0.23477998
   m_Direction: 1
-  m_Center: {x: 0, y: 0, z: -0.03}
---- !u!114 &6962414733672069470
+  m_Center: {x: -0, y: 0.042610433, z: -0.029999997}
+--- !u!114 &4197249044351108243
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -195,23 +195,24 @@ MonoBehaviour:
   m_GameObject: {fileID: 184432983246144228}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0d61d59062bab14459275ebcf013433c, type: 3}
+  m_Script: {fileID: 11500000, guid: 9aebd65673cdc4a4bac0aae95f81c93b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   gameManagerNew: {fileID: 0}
   hbScript: {fileID: 1863147966}
   teamCurrent: 2
   entityStateCurrent: 0
+  anim: {fileID: 0}
   healthCurrent: 100
   startinghealth: 100
-  attackDamage: 50
+  attackDamage: 33.4
   aiStateCurrent: 0
   targetTag: Player
   targetObject: {fileID: 0}
   aiFov: 130
-  targetRangeToAttack: 2
-  targetRangeCurrent: 2
-  moveSpeed: 1.5
+  targetRangeToAttack: 3
+  targetRangeCurrent: 0
+  moveSpeed: 2
   navAgent: {fileID: 0}
   enemyAttack: {fileID: 0}
   aiMoveTo: {fileID: 0}
@@ -223,7 +224,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 184432983246144228}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9b9e56932eb631b40ba89a61e9aff589, type: 3}
   m_Name: 
@@ -304,7 +305,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startActive: 0
-  mainCollider: {fileID: 441939897140846934}
+  mainCollider: {fileID: 4352446544687147249}
 --- !u!1 &304517117429356443
 GameObject:
   m_ObjectHideFlags: 0
@@ -1872,7 +1873,8 @@ GameObject:
   - component: {fileID: 2269955947955974437}
   - component: {fileID: 7607659933901120126}
   - component: {fileID: 520630654723282249}
-  - component: {fileID: 441939897140846934}
+  - component: {fileID: 4352446544687147249}
+  - component: {fileID: 5200843317517933402}
   m_Layer: 0
   m_Name: Oni_Knots
   m_TagString: Untagged
@@ -1939,8 +1941,8 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!136 &441939897140846934
-CapsuleCollider:
+--- !u!65 &4352446544687147249
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -1949,10 +1951,21 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 1
   m_Enabled: 1
-  m_Radius: 0.016008317
-  m_Height: 0.11019387
-  m_Direction: 1
-  m_Center: {x: 0.0015111852, y: 0.03438123, z: 0.0001010647}
+  serializedVersion: 2
+  m_Size: {x: 0.030641878, y: 0.11019387, z: 0.032016635}
+  m_Center: {x: 0.0015112075, y: 0.0343812, z: 0.00010106843}
+--- !u!114 &5200843317517933402
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4528191832153486033}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 836b05b9821585b4cb5e8074757fb5d4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &4668510108551294054
 GameObject:
   m_ObjectHideFlags: 0

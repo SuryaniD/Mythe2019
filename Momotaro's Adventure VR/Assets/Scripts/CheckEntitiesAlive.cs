@@ -16,16 +16,6 @@ public class CheckEntitiesAlive : MonoBehaviour
     {
         int _amount = 0;
 
-        /*foreach (GameObject _object in _pool.transform)
-        {
-            if (_object.GetComponent<Entity>() != null && _object.GetComponent<Entity>().teamCurrent == _team && _object.GetComponent<Entity>().entityStateCurrent == entityStates.Alive)
-            {
-                _amount++;
-            }
-        }*/
-
-        print("lol");
-
         for (int _i = 0; _i < _pool.Count; _i++)
         {
             GameObject _obj = _pool[_i];

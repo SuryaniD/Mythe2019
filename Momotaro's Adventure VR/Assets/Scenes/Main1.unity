@@ -264,20 +264,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3879052838686998002, guid: 59b70fef7451cc04db460d40617a7aff,
-        type: 3}
-      propertyPath: hbScript
-      value: 
-      objectReference: {fileID: 992133004}
-    - target: {fileID: 3879052838764370279, guid: 59b70fef7451cc04db460d40617a7aff,
-        type: 3}
-      propertyPath: m_TargetDisplay
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2063008398, guid: 59b70fef7451cc04db460d40617a7aff, type: 3}
-      propertyPath: m_Color.a
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 59b70fef7451cc04db460d40617a7aff, type: 3}
 --- !u!1001 &92224253
@@ -1464,18 +1450,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fb710a001890d9a44bb74a8ce4f20cc0, type: 3}
---- !u!114 &992133004 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 6442029324321335363, guid: 59b70fef7451cc04db460d40617a7aff,
-    type: 3}
-  m_PrefabInstance: {fileID: 68546986}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: edba49f796a75d940bf73f8bf895bc6a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!4 &1024945861 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: a5a1dc1f5cac7ab45b2cbad368084d61,
@@ -2063,7 +2037,7 @@ RectTransform:
   m_Children:
   - {fileID: 1726000254}
   m_Father: {fileID: 0}
-  m_RootOrder: 16
+  m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: -37.27, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -2201,7 +2175,7 @@ PrefabInstance:
     - target: {fileID: 2663315681101644529, guid: 2ad7e44400b15f948b0ac450317e3c3a,
         type: 3}
       propertyPath: m_Name
-      value: LevelPrefab (1)
+      value: Fake LevelPrefab
       objectReference: {fileID: 0}
     - target: {fileID: 2663315681101644528, guid: 2ad7e44400b15f948b0ac450317e3c3a,
         type: 3}
@@ -2241,7 +2215,7 @@ PrefabInstance:
     - target: {fileID: 2663315681101644528, guid: 2ad7e44400b15f948b0ac450317e3c3a,
         type: 3}
       propertyPath: m_RootOrder
-      value: 17
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 2663315681101644528, guid: 2ad7e44400b15f948b0ac450317e3c3a,
         type: 3}
@@ -2310,7 +2284,7 @@ RectTransform:
   - {fileID: 1242721648}
   - {fileID: 148740013}
   m_Father: {fileID: 0}
-  m_RootOrder: 15
+  m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -2549,11 +2523,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2268534791657704178, guid: 2ad7e44400b15f948b0ac450317e3c3a,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 2268534791657704176, guid: 2ad7e44400b15f948b0ac450317e3c3a,
         type: 3}
       propertyPath: debugAnimate
@@ -2583,6 +2552,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2268534791657704178, guid: 2ad7e44400b15f948b0ac450317e3c3a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2663315681391817807, guid: 2ad7e44400b15f948b0ac450317e3c3a,
         type: 3}
@@ -2736,6 +2710,11 @@ PrefabInstance:
     - target: {fileID: 1019706387238918622, guid: 0845e8ad724bba446b78591e8462d995,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5063155894221062953, guid: 0845e8ad724bba446b78591e8462d995,
+        type: 3}
+      propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
