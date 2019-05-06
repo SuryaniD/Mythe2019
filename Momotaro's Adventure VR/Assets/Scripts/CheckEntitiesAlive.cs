@@ -20,7 +20,7 @@ public class CheckEntitiesAlive : MonoBehaviour
         {
             GameObject _obj = _pool[_i];
 
-            if (_obj != null && _obj.GetComponent<EntityBehaviour>() != null && _obj.GetComponent<EntityBehaviour>().teamCurrent == _team && _obj.GetComponent<EntityBehaviour>().entityStateCurrent == EntityStates.Alive)
+            if (_obj != null && _obj.GetComponent<Entity>() != null && _obj.GetComponent<Entity>().teamCurrent == _team && _obj.GetComponent<Entity>().entityStateCurrent == EntityStates.Alive)
             {
                 //Increase the amount
                 _amount++;

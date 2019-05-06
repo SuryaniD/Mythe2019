@@ -210,7 +210,7 @@ MonoBehaviour:
   targetTag: Player
   targetObject: {fileID: 0}
   aiFov: 130
-  targetRangeToAttack: 3
+  targetRangeToAttack: 1.7
   targetRangeCurrent: 0
   moveSpeed: 2
   navAgent: {fileID: 0}

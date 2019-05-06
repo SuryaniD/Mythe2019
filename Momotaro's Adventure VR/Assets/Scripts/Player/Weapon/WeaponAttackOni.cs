@@ -11,7 +11,8 @@ public class WeaponAttackOni : MonoBehaviour
 {
     private void OnTriggerEnter(Collider _other)
     {
-        if (_other.GetComponent<EntityBehaviour>() != null && _other.GetComponent<EntityBehaviour>().teamCurrent == TeamTypes.Friendly)
-            _other.GetComponent<EntityBehaviour>().TakeDamage();
+        print("HIT PLAYER");
+        if (_other.GetComponent<Entity>() != null && _other.GetComponent<Entity>().teamCurrent == TeamTypes.Friendly)
+            _other.GetComponent<Entity>().TakeDamage();
     }
 }

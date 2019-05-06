@@ -17,10 +17,14 @@ public class OniAnimationManager : MonoBehaviour
     [SerializeField]
     private bool tryAttack;
 
+    private Vector3 savedPos;
+
 
     // Start is called before the first frame update
     void Start()
     {
+        savedPos = transform.position;
+
         rigidBody = GetComponent<Rigidbody>();
         animator = GetComponent<Animator>();
     }
@@ -28,7 +32,10 @@ public class OniAnimationManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (savedPos != transform.position)
+            vertical = 1;
+        else
+            vertical = 0;
 
         ChangeHorizontal(horizontal);
         ChangeVertical(vertical);
