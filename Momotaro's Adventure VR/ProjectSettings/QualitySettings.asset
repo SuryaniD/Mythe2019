@@ -40,7 +40,9 @@ QualitySettings:
     asyncUploadBufferSize: 16
     asyncUploadPersistentBuffer: 1
     resolutionScalingFixedDPIFactor: 1
-    excludedTargetPlatforms: []
+    excludedTargetPlatforms:
+    - Standalone
+    - WebGL
   - serializedVersion: 2
     name: Fast
     pixelLightCount: 0
@@ -75,7 +77,9 @@ QualitySettings:
     asyncUploadBufferSize: 16
     asyncUploadPersistentBuffer: 1
     resolutionScalingFixedDPIFactor: 1
-    excludedTargetPlatforms: []
+    excludedTargetPlatforms:
+    - Standalone
+    - WebGL
   - serializedVersion: 2
     name: Simple
     pixelLightCount: 1
@@ -110,7 +114,9 @@ QualitySettings:
     asyncUploadBufferSize: 16
     asyncUploadPersistentBuffer: 1
     resolutionScalingFixedDPIFactor: 1
-    excludedTargetPlatforms: []
+    excludedTargetPlatforms:
+    - WebGL
+    - Standalone
   - serializedVersion: 2
     name: Good
     pixelLightCount: 2
@@ -145,7 +151,9 @@ QualitySettings:
     asyncUploadBufferSize: 16
     asyncUploadPersistentBuffer: 1
     resolutionScalingFixedDPIFactor: 1
-    excludedTargetPlatforms: []
+    excludedTargetPlatforms:
+    - Standalone
+    - WebGL
   - serializedVersion: 2
     name: Beautiful
     pixelLightCount: 3
@@ -180,7 +188,9 @@ QualitySettings:
     asyncUploadBufferSize: 16
     asyncUploadPersistentBuffer: 1
     resolutionScalingFixedDPIFactor: 1
-    excludedTargetPlatforms: []
+    excludedTargetPlatforms:
+    - WebGL
+    - Standalone
   - serializedVersion: 2
     name: Fantastic
     pixelLightCount: 4
@@ -188,7 +198,7 @@ QualitySettings:
     shadowResolution: 2
     shadowProjection: 1
     shadowCascades: 4
-    shadowDistance: 150
+    shadowDistance: 200
     shadowNearPlaneOffset: 3
     shadowCascade2Split: 0.33333334
     shadowCascade4Split: {x: 0.06666667, y: 0.19999999, z: 0.46666664}
@@ -216,4 +226,6 @@ QualitySettings:
     asyncUploadPersistentBuffer: 1
     resolutionScalingFixedDPIFactor: 1
     excludedTargetPlatforms: []
-  m_PerPlatformDefaultQuality: {}
+  m_PerPlatformDefaultQuality:
+    Standalone: 5
+    WebGL: 5

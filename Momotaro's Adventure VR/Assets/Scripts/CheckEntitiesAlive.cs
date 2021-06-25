@@ -16,21 +16,11 @@ public class CheckEntitiesAlive : MonoBehaviour
     {
         int _amount = 0;
 
-        /*foreach (GameObject _object in _pool.transform)
-        {
-            if (_object.GetComponent<Entity>() != null && _object.GetComponent<Entity>().teamCurrent == _team && _object.GetComponent<Entity>().entityStateCurrent == entityStates.Alive)
-            {
-                _amount++;
-            }
-        }*/
-
-        print("lol");
-
         for (int _i = 0; _i < _pool.Count; _i++)
         {
             GameObject _obj = _pool[_i];
 
-            if (_obj != null && _obj.GetComponent<EntityBehaviour>() != null && _obj.GetComponent<EntityBehaviour>().teamCurrent == _team && _obj.GetComponent<EntityBehaviour>().entityStateCurrent == EntityStates.Alive)
+            if (_obj != null && _obj.GetComponent<Entity>() != null && _obj.GetComponent<Entity>().teamCurrent == _team && _obj.GetComponent<Entity>().entityStateCurrent == EntityStates.Alive)
             {
                 //Increase the amount
                 _amount++;

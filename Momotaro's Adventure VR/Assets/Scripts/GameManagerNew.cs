@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using System;
+using UnityEngine.SceneManagement;
 
 public enum GameStates
 {
@@ -33,6 +34,12 @@ public class GameManagerNew : MonoBehaviour
     [SerializeField]
     private List<GameObject> entityAliveObjects = new List<GameObject>();
 
+    public MenuManager menuManager;
+
+    [Header("Disable Object List")]
+    [SerializeField]
+    private List<GameObject> disableObjects = new List<GameObject>();
+
     //Components
     private SpawnEntities spawnEntities;
     private CheckEntitiesAlive checkEntitiesAlive;
@@ -42,8 +49,6 @@ public class GameManagerNew : MonoBehaviour
 
     void Start()
     {
-        //LevelCurrent = 1;
-
         //Get the components
         spawnEntities = GetComponent<SpawnEntities>();
         checkEntitiesAlive = GetComponent<CheckEntitiesAlive>();
@@ -51,6 +56,16 @@ public class GameManagerNew : MonoBehaviour
 
         //Get the gameobjects
         player = GameObject.FindGameObjectWithTag("Player");
+        entityAliveObjects.Add(player);
+    }
+
+    void Update()
+    {
+        if (Input.GetButtonUp("Escape"))
+            GameQuit();
+
+        if (Input.GetButtonUp("r"))
+            GameRestart(0);
     }
 
     void FixedUpdate()
@@ -73,6 +88,12 @@ public class GameManagerNew : MonoBehaviour
             case GameStates.BeginState:
 
                 Level++;
+                LevelUpdated?.Invoke();
+
+                menuManager.DeactivateMenu();
+
+                DAObjects(true);
+
 
                 //Close the doors fast
                 openLevelDoors.CloseDoors(1000f);
@@ -104,6 +125,12 @@ public class GameManagerNew : MonoBehaviour
                     SetCurrentGameState(GameStates.WinState);
                 }
 
+                if (checkEntitiesAlive.CheckAmountEntitiesAlive(entityAliveObjects, TeamTypes.Friendly) == 0)
+                {
+                    //If there arent any, The player has won this round
+                    SetCurrentGameState(GameStates.LoseState);
+                }
+
                 break;
 
             case GameStates.WinState:
@@ -114,7 +141,8 @@ public class GameManagerNew : MonoBehaviour
 
             case GameStates.LoseState:
 
-
+                menuManager.ActivateMenu();
+                DAObjects(false);
 
             break;
         }
@@ -124,4 +152,23 @@ public class GameManagerNew : MonoBehaviour
     }
 
 
+    public void GameQuit()
+    {
+        Application.Quit();
+    }
+
+    public void GameRestart(int _scene)
+    {
+        print("Restart Game");
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+    }
+
+
+    public void DAObjects(bool _value)
+    {
+        for (int _i = 0; _i < disableObjects.Count; _i++)
+        {
+            disableObjects[_i].gameObject.SetActive(_value);
+        }
+    }
 }

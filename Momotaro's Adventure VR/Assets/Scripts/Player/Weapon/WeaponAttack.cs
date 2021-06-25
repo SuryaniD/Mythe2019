@@ -39,7 +39,7 @@ public class WeaponAttack : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         if (other.GetComponent<EntityBehaviour>() != null && other.GetComponent<EntityBehaviour>().teamCurrent == TeamTypes.Enemy)
-            other.GetComponent<EntityBehaviour>().TakeDamage(TeamTypes.Enemy);
+            other.GetComponent<EntityBehaviour>().TakeDamage();
     }
 
     IEnumerator Alarm_canAttack(float _value)

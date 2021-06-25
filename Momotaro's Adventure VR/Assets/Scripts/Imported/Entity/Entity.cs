@@ -23,30 +23,15 @@ public class Entity : MonoBehaviour
     public HealthBarScript hbScript;
     public TeamTypes teamCurrent = TeamTypes.Enemy;
     public EntityStates entityStateCurrent = EntityStates.Alive;
-    private Animator anim;
+    public Animator anim;
     [SerializeField]
     public float healthCurrent;
     public float startinghealth = 100.0f;
     public float attackDamage = 10.0f;
 
-    
-
-    private void FixedUpdate()
-    {
-        //if (healthCurrent <= 0)
-        //{
-        //    entityStateCurrent = entityStates.Dying;
-
-        //    if (entityStateCurrent != entityStates.Dead)
-        //    {
-        //        entityStateCurrent = entityStates.Dead;
-        //        EntityDie();
-        //    }
-        //}
-    }
-
     private void Awake()
     {
+        healthCurrent = startinghealth;
         gameManagerNew = GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManagerNew>();
         anim = GetComponent<Animator>();
     }
@@ -56,23 +41,10 @@ public class Entity : MonoBehaviour
         healthCurrent = startinghealth;
     }
 
-    public void TakeDamage(TeamTypes type)
+    public virtual void TakeDamage()
     {
         if (entityStateCurrent == EntityStates.Dead)
             return;
-
-        if (type == TeamTypes.Enemy)
-        {            
-            healthCurrent -= attackDamage;
-            hbScript.EnemyHealthChange(healthCurrent);
-            anim.Play("Hit");
-        }
-
-        if (type == TeamTypes.Friendly)
-        {
-            healthCurrent -= attackDamage;
-            hbScript.PlayerHealthChange(healthCurrent);
-        }
     }
 
 
@@ -159,7 +131,7 @@ public class Entity : MonoBehaviour
 
     }
 
-    IEnumerator DeathSequence()
+    public virtual IEnumerator DeathSequence()
     {
         anim.Play("Death");
 
@@ -167,7 +139,7 @@ public class Entity : MonoBehaviour
 
         yield return new WaitForSeconds(2f);
 
-        gameManagerNew.Score += 1;
+        gameManagerNew.Score++;
         gameManagerNew.ScoreUpdated?.Invoke();
 
         gameObject.SetActive(false);
